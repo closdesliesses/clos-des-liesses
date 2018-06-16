@@ -1,0 +1,43 @@
+#desktop-nav {
+  position: absolute;
+  display: flex;
+  padding: 60px 80px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+}
+
+#desktop-nav__logo {
+  height: 40px;
+  width: auto;
+  margin-top: -22px;
+}
+
+#desktop-nav__menu {
+  display: flex;
+}
+
+.desktop-nav__item {
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.desktop-nav__item--contact {
+    border: 2px solid white;
+    padding: 12px 15px;
+  }
+
+  li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}

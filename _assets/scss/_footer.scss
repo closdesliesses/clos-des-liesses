@@ -1,0 +1,54 @@
+footer {
+  box-sizing: border-box;
+  display: flex;
+  height: 85px;
+  background-color: #2a2a2a;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    height: 170px;
+  }
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  width: 260px;
+  justify-content: center;
+
+  @include respond-to(phone) {
+    width: auto;
+    justify-content: flex-start;
+    margin: 8px 20px;
+  }
+
+  .fa {
+    color: #a6a6a6;
+    font-size: 20px;
+    width: 25px;
+  }
+
+  p {
+    color: #ff8900;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+#signature {
+  color: #a6a6a6;
+  position: absolute;
+  bottom: 0;
+  right: 2px;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+
+  a {
+    color: #ff8900;
+  }
+}

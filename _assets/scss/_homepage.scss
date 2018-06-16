@@ -1,0 +1,152 @@
+#homepage {
+  .centered-crop-image {
+    width: 100%;
+  }
+}
+
+.homepage__background-intro {
+  align-items: center;
+  background: url("../images/bg-home-intro.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+.homepage__text-intro {
+  bottom: 15%;
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  right: 6%;
+
+  span {
+    font-style: italic;
+    letter-spacing: 0;
+  }
+}
+
+.homepage__arrow-intro {
+  bottom: 5%;
+  height: 45px;
+  position: absolute;
+  right: 6%;
+  width: auto;
+}
+
+// Block 1
+.homepage__block {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.homepage__block--1 {
+  padding-bottom: 150px;
+
+  .homepage__block__text {
+
+    &:first-child {
+      margin-right: 70px;
+    }
+  }
+}
+
+.homepage__block--2 {
+  background-color: #FDFAEA;
+  flex-direction: row;
+
+  .homepage__block__content {
+    margin-right: calc(50% + 100px);
+  }
+
+  .homepage__block__text,
+  .homepage__block__title {
+    text-align: right;
+  }
+}
+
+.homepage__block--3 {
+  padding-bottom: 200px;
+
+  .homepage__block__content {
+    margin-left: calc(50% + 100px);
+    align-items: flex-start;
+  }
+
+  .homepage__block__text,
+  .homepage__block__title {
+    text-align: left;
+  }
+
+  .homepage__block__image {
+    height: 570px;
+    top: 100px;
+    right: 50%;
+    left: auto;
+  }
+}
+
+.homepage__block__content {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 50%;
+}
+
+.homepage__block__number {
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.homepage__block__dash {
+  height: 30px;
+  width: 1px;
+  background-color: #eaeaea;
+  margin: 15px 0;
+}
+
+.homepage__block__title {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 45px;
+
+  span {
+    font-style: italic;
+  }
+}
+
+.homepage__block__text-container {
+  display: flex;
+  margin: 70px 0 50px 0;
+}
+
+.homepage__block__text {
+  font-family: sans-serif;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.homepage__block__button {
+  @extend .button-bordered;
+}
+
+.homepage__block__image {
+  width: 50%;
+  overflow: hidden;
+  height: 594px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+}
