@@ -419,6 +419,13 @@ footer {
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .footer__legal-mentions,
+.footer__address,
+.footer__social-icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0; }
+
+.footer__legal-mentions,
 .footer__address {
   color: rgba(255, 255, 255, 0.5);
   line-height: 2;
@@ -433,7 +440,10 @@ footer {
 .footer__social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .footer__social-icon {
   width: 45px;
