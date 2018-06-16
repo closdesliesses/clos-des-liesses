@@ -252,6 +252,24 @@ button::-moz-focus-inner {
   top: -50px;
   left: 50%; }
 
+.homepage__banner-quote {
+  background-color: #51504C;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 30px; }
+  .homepage__banner-quote span {
+    font-style: italic; }
+
 #desktop-nav {
   position: absolute;
   display: -webkit-box;
@@ -299,53 +317,140 @@ button::-moz-focus-inner {
     letter-spacing: 2px; }
 
 footer {
-  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85px;
-  background-color: #2a2a2a;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #484743;
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative; }
-  @media screen and (max-width: 768px) {
-    footer {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      height: 170px; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  footer .centered-crop-image {
+    height: 100%; }
 
-.footer-link {
+.footer__vertical-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  padding: 100px 20px; }
+
+.footer__block {
+  width: 33.33%;
+  padding: 0 60px; }
+  .footer__block:first-child {
+    padding-right: 40px; }
+  .footer__block:nth-child(2) {
+    padding-left: 20px; }
+  .footer__block:last-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.2); }
+
+.footer__text {
+  color: white;
+  line-height: 2.2;
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 12.5px;
+  letter-spacing: 2px;
+  font-weight: 100; }
+
+.footer__logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 30px; }
+
+.footer__image {
+  width: 100%;
+  height: 427px;
+  position: relative;
+  overflow: hidden; }
+
+.footer__text-reco {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 30px; }
+  .footer__text-reco.footer__text-reco--margin-top {
+    margin-top: 30px; }
+
+.footer__reco-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__reco {
+  height: 100px;
+  width: auto;
+  margin-right: 30px; }
+
+.footer__button {
+  text-transform: uppercase;
+  padding: 15px 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 14px;
+  border: 3px solid white;
+  margin-top: 90px; }
+  .footer__button:hover {
+    cursor: pointer; }
+
+.footer__horizontal-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px;
-  width: 260px;
+  width: calc(100% - 140px);
+  padding: 30px 0;
+  margin: 0 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+
+.footer__legal-mentions,
+.footer__address {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 2;
+  font-family: sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 400; }
+
+.footer__address {
+  text-align: right; }
+
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer__social-icon {
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  @media screen and (max-width: 768px) {
-    .footer-link {
-      width: auto;
-      -webkit-box-pack: start;
-          -ms-flex-pack: start;
-              justify-content: flex-start;
-      margin: 8px 20px; } }
-  .footer-link .fa {
-    color: #a6a6a6;
-    font-size: 20px;
-    width: 25px; }
-  .footer-link p {
-    color: #ff8900;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    margin-left: 15px; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px; }
 
 #signature {
   color: #a6a6a6;
@@ -356,3 +461,7 @@ footer {
   font-size: 11px; }
   #signature a {
     color: #ff8900; }
+
+#bodasnet-widget-content ul {
+  max-height: 355px;
+  overflow: scroll; }
