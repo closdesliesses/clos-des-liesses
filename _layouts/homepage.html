@@ -5,9 +5,9 @@
 
   <body>
 
-    <div id="homepage">
+    {% include nav.html %}
 
-      {% include nav.html %}
+    <div id="homepage">
 
       <div class="homepage__background-intro">
         <h2 class="homepage__text-intro"><span>Un lieu intemporel</span>, pour<br>des souvenirs éternels.</h2>
@@ -15,47 +15,49 @@
       </div>
 
       <div class="homepage__block homepage__block--1">
-        <p class="homepage__block__number">01</p>
-        <div class="homepage__block__dash"></div>
-        <h3 class="homepage__block__title"><span>L'écrin parfait</span> de votre récéption</h3>
+        <p class="homepage__block__number" data-aos="fade-up">01</p>
+        <div class="homepage__block__dash" data-aos="fade-up"></div>
+        <h3 class="homepage__block__title" data-aos="fade-up"><span>L'écrin parfait</span> de votre récéption</h3>
         <div class="homepage__block__text-container">
-          <p class="homepage__block__text">Imaginez, une arrivée dans un parc aux arbres<br>centenaires, un cocktail entouré de chevaux<br>paisibles, un dîner dans une élégante salle<br>en pierres dorées.</p>
-          <p class="homepage__block__text">A 25 minutes de Lyon, rien ne semble pouvoir<br>déranger la quiétude de ce site qui, le soir,<br>revêt ses habits de lumières pour devenir<br>un royaume où la fête est seule souveraine.</p>
+          <p class="homepage__block__text" data-aos="fade-right">Imaginez, une arrivée dans un parc aux arbres<br>centenaires, un cocktail entouré de chevaux<br>paisibles, un dîner dans une élégante salle<br>en pierres dorées.</p>
+          <p class="homepage__block__text" data-aos="fade-left">A 25 minutes de Lyon, rien ne semble pouvoir<br>déranger la quiétude de ce site qui, le soir,<br>revêt ses habits de lumières pour devenir<br>un royaume où la fête est seule souveraine.</p>
         </div>
-        <button class="homepage__block__button">découvrez le domaine</button>
+        <button class="homepage__block__button" data-aos="fade">découvrez le domaine</button>
       </div>
 
       <div class="homepage__block homepage__block--2">
-        <div class="homepage__block__content">
+        <div class="homepage__block__content" data-aos="fade-up">
           <p class="homepage__block__number">02</p>
           <div class="homepage__block__dash"></div>
           <h3 class="homepage__block__title">Le plus beau jour<br><span>de votre vie</span></h3>
           <div class="homepage__block__text-container">
             <p class="homepage__block__text">Choisissez un mariage chic et champêtre :<br>laissez-vous guider pour une journée de rêve<br>au Domaine du Clos des Liesses...</p>
           </div>
-          <button class="homepage__block__button">votre mariage</button>
+          <button class="homepage__block__button" data-aos="fade-right">votre mariage</button>
         </div>
         <div class="homepage__block__image">
-          <img class="centered-crop-image" src="{{ site.baseurl}}/assets/images/01_CDL_Home_image_2.jpg" alt="">
+          <img class="centered-crop-image" src="{{ site.baseurl}}/assets/images/01_CDL_Home_image_2.jpg" alt="" data-aos="fade-left">
         </div>
       </div>
 
       <div class="homepage__block homepage__block--3">
         <div class="homepage__block__image">
-          <img class="centered-crop-image" src="{{ site.baseurl}}/assets/images/01_CDL_Home_image_3.jpg" alt="">
+          <img class="centered-crop-image" src="{{ site.baseurl}}/assets/images/01_CDL_Home_image_3.jpg" alt="" data-aos="fade-right">
         </div>
-        <div class="homepage__block__content">
+        <div class="homepage__block__content" data-aos="fade-up">
           <p class="homepage__block__number">03</p>
           <div class="homepage__block__dash"></div>
           <h3 class="homepage__block__title"><span>Ajoutez de l'émotion</span><br>à vos événements</h3>
           <div class="homepage__block__text-container">
             <p class="homepage__block__text">De par sa configuration et son environnement,<br> le Domaine du Clos des Liesses est parfaitement<br> adapté pour une Garden Party, un cocktail,<br> une soirée d'entreprise ou une conférence...</p>
           </div>
-          <button class="homepage__block__button">vos événements professionels</button>
+          <button class="homepage__block__button" data-aos="fade-left">vos événements professionels</button>
         </div>
       </div>
 
-      <h3 class="homepage__banner-quote"><span>"Classé dans</span>&nbsp;les 10 lieux de rêve&nbsp;<span>pour se marier dans la région de Lyon"</span></h3>
+      <div class="homepage__banner-quote">
+        <h3 class="homepage__banner-quote-text" data-aos="fade"><span>"Classé dans</span>&nbsp;les 10 lieux de rêve&nbsp;<span>pour se marier dans la région de Lyon"</span></h3>
+      </div>
 
     </div>
 

@@ -8,6 +8,15 @@ $(document).ready(function(){
 
   $(window).trigger('resize');
 
+  AOS.init({
+    duration: 800,
+    delay: 50,
+  });
+
+  $("#menuToggle").find("input").click(function() {
+    $("#homepage").toggleClass("blur");
+  });
+
   $(window).scroll(function(){
     var $scrollTop = $(window).scrollTop(),
         $windowHeight = $(window).height();

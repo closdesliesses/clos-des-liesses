@@ -32,5 +32,8 @@
     "npm-run-all": "^4.0.2",
     "svgo": "^0.7.2",
     "vinyl-paths": "^2.1.0"
+  },
+  "dependencies": {
+    "aos": "^2.3.0"
   }
 }

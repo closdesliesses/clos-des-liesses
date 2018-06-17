@@ -124,6 +124,10 @@ button::-moz-focus-inner {
   }
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 @import "_mixins";
 @import "_variables";
 @import "_homepage";
