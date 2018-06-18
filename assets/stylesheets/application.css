@@ -1,23 +1,3 @@
-@font-face {
-  font-family: 'Brushsci';
-  src: url("../fonts/BRUSHSCI.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'kirnberg';
-  src: url("../fonts/kirnberg.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'fertigo';
-  src: url("../fonts/fertigo.ttf") format("truetype"), url("../fonts/fertigo.woff") format("woff"), url("../fonts/fertigo.eot?#iefix") format("eot"); }
-
-@font-face {
-  font-family: 'DymaxionScript';
-  src: url("../fonts/DymaxionScript.ttf") format("truetype"), url("../fonts/DymaxionScript.woff") format("woff"); }
-
-@font-face {
-  font-family: 'blackjack';
-  src: url("../fonts/blackjack.ttf") format("truetype"), url("../fonts/blackjack.woff") format("woff"), url("../fonts/blackjack.eot?#iefix") format("eot"); }
-
 /**
  * Reset some basic elements
  */
@@ -32,6 +12,7 @@ html {
 
 body {
   color: #404040;
+  font-family: 'Nunito', sans-serif;
   min-height: 100%; }
 
 a,
@@ -145,9 +126,10 @@ button::-moz-focus-inner {
   font-weight: 400;
   letter-spacing: 1px;
   position: absolute;
-  right: 6%; }
+  right: 6%;
+  font-family: 'Freight Text Pro Medium'; }
   .homepage__text-intro span {
-    font-style: italic;
+    font-family: 'Freight Text Pro Medium Italic';
     letter-spacing: 0; }
 
 .homepage__arrow-intro {
@@ -221,7 +203,6 @@ button::-moz-focus-inner {
   width: 50%; }
 
 .homepage__block__number {
-  font-family: sans-serif;
   font-weight: bold;
   letter-spacing: 2px; }
 
@@ -234,9 +215,11 @@ button::-moz-focus-inner {
 .homepage__block__title {
   font-weight: 400;
   letter-spacing: 1px;
-  font-size: 45px; }
+  font-size: 45px;
+  font-family: 'Freight Text Pro Medium'; }
   .homepage__block__title span {
-    font-style: italic; }
+    font-family: 'Freight Text Pro Medium Italic';
+    letter-spacing: 0; }
 
 .homepage__block__text-container {
   display: -webkit-box;
@@ -245,7 +228,6 @@ button::-moz-focus-inner {
   margin: 70px 0 50px 0; }
 
 .homepage__block__text {
-  font-family: sans-serif;
   line-height: 2;
   letter-spacing: 1px;
   font-size: 16px; }
@@ -274,9 +256,12 @@ button::-moz-focus-inner {
 .homepage__banner-quote-text {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: 'Freight Text Pro Medium';
+  letter-spacing: 1px; }
   .homepage__banner-quote-text span {
-    font-style: italic; }
+    font-family: 'Freight Text Pro Medium Italic';
+    letter-spacing: 0; }
 
 #desktop-nav {
   position: absolute;
@@ -296,8 +281,16 @@ button::-moz-focus-inner {
   transition: all .5s; }
   #desktop-nav.fixed {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 35px 80px; }
+    background-color: white;
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.5);
+    padding: 35px 80px 20px 80px; }
+    #desktop-nav.fixed img {
+      -webkit-filter: invert(100%);
+              filter: invert(100%); }
+    #desktop-nav.fixed li {
+      color: #404040; }
+    #desktop-nav.fixed .desktop-nav__item.desktop-nav__item--contact {
+      border: 2px solid #404040; }
   @media screen and (max-width: 768px) {
     #desktop-nav {
       display: none; } }
@@ -329,7 +322,6 @@ button::-moz-focus-inner {
     list-style-type: none;
     color: white;
     text-transform: uppercase;
-    font-family: sans-serif;
     font-size: 12px;
     letter-spacing: 2px; }
 
@@ -440,7 +432,6 @@ nav#phone-nav {
     margin: 15px 0;
     padding-left: 10px;
     font-size: 16px;
-    font-family: "Open Sans";
     text-transform: uppercase; }
     #menu li:focus, #menu li:active {
       background: transparent; }
@@ -498,7 +489,7 @@ footer {
   color: white;
   line-height: 2.2;
   margin-top: 30px;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 12.5px;
   letter-spacing: 2px;
   font-weight: 100; }
@@ -517,7 +508,7 @@ footer {
 .footer__text-reco {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
-  font-style: italic;
+  font-family: 'Freight Text Pro Medium Italic';
   font-size: 22px;
   margin-bottom: 30px; }
   .footer__text-reco.footer__text-reco--margin-top {
@@ -538,7 +529,7 @@ footer {
   padding: 15px 20px;
   color: white;
   letter-spacing: 2px;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 14px;
   border: 3px solid white;
   margin-top: 90px; }
@@ -571,7 +562,7 @@ footer {
 .footer__address {
   color: rgba(255, 255, 255, 0.5);
   line-height: 2;
-  font-family: sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 400; }
