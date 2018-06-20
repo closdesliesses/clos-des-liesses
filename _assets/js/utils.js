@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   $(window).resize(function() {
-    $('.homepage__background-intro').height($(window).height()); // Set the height of the window to the .home
+    $('.homepage__background-intro, .domain__background-intro').height($(window).height()); // Set the height of the window to the .home
   });
 
   $(window).trigger('resize');

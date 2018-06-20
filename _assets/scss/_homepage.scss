@@ -27,10 +27,10 @@
   letter-spacing: 1px;
   position: absolute;
   right: 6%;
-  font-family: 'Freight Text Pro Medium';
+  font-family: 'FreightTextProMedium-Regular';
 
   span {
-    font-family: 'Freight Text Pro Medium Italic';
+    font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
   }
 }
@@ -122,10 +122,10 @@
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 45px;
-  font-family: 'Freight Text Pro Medium';
+  font-family: 'FreightTextProMedium-Regular';
 
   span {
-    font-family: 'Freight Text Pro Medium Italic';
+    font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
   }
 }
@@ -152,25 +152,4 @@
   position: absolute;
   top: -50px;
   left: 50%;
-}
-
-.homepage__banner-quote {
-  background-color: #51504C;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.homepage__banner-quote-text {
-  color: rgba(255,255,255,.7);
-  font-weight: 400;
-  font-size: 30px;
-  font-family: 'Freight Text Pro Medium';
-  letter-spacing: 1px;
-
-  span {
-    font-family: 'Freight Text Pro Medium Italic';
-    letter-spacing: 0;
-  }
 }

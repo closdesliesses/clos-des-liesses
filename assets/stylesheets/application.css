@@ -127,9 +127,9 @@ button::-moz-focus-inner {
   letter-spacing: 1px;
   position: absolute;
   right: 6%;
-  font-family: 'Freight Text Pro Medium'; }
+  font-family: 'FreightTextProMedium-Regular'; }
   .homepage__text-intro span {
-    font-family: 'Freight Text Pro Medium Italic';
+    font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0; }
 
 .homepage__arrow-intro {
@@ -216,9 +216,9 @@ button::-moz-focus-inner {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 45px;
-  font-family: 'Freight Text Pro Medium'; }
+  font-family: 'FreightTextProMedium-Regular'; }
   .homepage__block__title span {
-    font-family: 'Freight Text Pro Medium Italic';
+    font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0; }
 
 .homepage__block__text-container {
@@ -240,9 +240,48 @@ button::-moz-focus-inner {
   top: -50px;
   left: 50%; }
 
-.homepage__banner-quote {
-  background-color: #51504C;
-  padding: 50px;
+#domain {
+  position: relative; }
+  #domain .centered-crop-image {
+    width: 100%; }
+
+.domain__background-intro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/bg-domaine-intro.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.domain__text-intro {
+  bottom: 12%;
+  color: white;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  font-family: 'FreightTextProMedium-Regular';
+  text-align: center;
+  width: 100%; }
+  .domain__text-intro span {
+    font-family: 'FreightTextProMedium-Italic';
+    letter-spacing: 0; }
+
+.domain__block {
+  padding: 50px 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,17 +290,93 @@ button::-moz-focus-inner {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
 
-.homepage__banner-quote-text {
-  color: rgba(255, 255, 255, 0.7);
+.domain__block--inverted .domain__block__content {
+  margin-right: calc(50% + 100px);
+  margin-left: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.domain__block--inverted .domain__block__text,
+.domain__block--inverted .domain__block__title {
+  text-align: right; }
+
+.domain__block--inverted .domain__block__image {
+  right: auto;
+  left: 50%; }
+
+.domain__block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-left: calc(50% + 100px);
+  height: 500px; }
+
+.domain__block__number {
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.domain__block__dash {
+  height: 30px;
+  width: 1px;
+  background-color: #eaeaea;
+  margin: 15px 0; }
+
+.domain__block__title {
   font-weight: 400;
-  font-size: 30px;
-  font-family: 'Freight Text Pro Medium';
-  letter-spacing: 1px; }
-  .homepage__banner-quote-text span {
-    font-family: 'Freight Text Pro Medium Italic';
+  letter-spacing: 1px;
+  font-size: 45px;
+  font-family: 'FreightTextProMedium-Regular';
+  text-align: left; }
+  .domain__block__title span {
+    font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0; }
+
+.domain__block__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px 0 60px 0; }
+
+.domain__block__text {
+  line-height: 2;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-align: left;
+  margin: 20px 0; }
+
+.domain__block__image {
+  width: 50%;
+  overflow: hidden;
+  height: 500px;
+  position: absolute;
+  right: 50%;
+  top: 50px; }
+
+.domain__block__arrow {
+  width: 35px;
+  height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+  .domain__block__arrow:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%); }
 
 #desktop-nav {
   position: absolute;
@@ -468,6 +583,30 @@ footer {
   footer .centered-crop-image {
     height: 100%; }
 
+.footer__banner-quote {
+  background-color: #51504C;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+
+.footer__banner-quote-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  font-size: 30px;
+  font-family: 'FreightTextProMedium-Regular';
+  letter-spacing: 1px; }
+  .footer__banner-quote-text span {
+    font-family: 'FreightTextProMedium-Italic';
+    letter-spacing: 0; }
+
 .footer__vertical-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,7 +647,7 @@ footer {
 .footer__text-reco {
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
-  font-family: 'Freight Text Pro Medium Italic';
+  font-family: 'FreightTextProMedium-Italic';
   font-size: 22px;
   margin-bottom: 30px; }
   .footer__text-reco.footer__text-reco--margin-top {
