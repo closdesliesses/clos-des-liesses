@@ -1,9 +1,5 @@
 #domain {
   position: relative;
-
-  .centered-crop-image {
-    width: 100%;
-  }
 }
 
 .domain__background-intro {
@@ -17,6 +13,7 @@
   margin:0;
   padding:0;
   position: relative;
+  z-index: 3;
 }
 
 .domain__text-intro {
@@ -60,6 +57,27 @@
   .domain__block__image {
     right: auto;
     left: 50%;
+  }
+}
+
+.domain__block--centered {
+  flex-direction: column;
+
+  .domain__block__content {
+    height: 770px;
+    margin-left: auto;
+    margin-bottom: 70px;
+    width: 100%;
+  }
+
+  .domain__block__text-container {
+    margin-left: 60%;
+  }
+
+  .domain__block__image {
+    height: 690px;
+    top: 255px;
+    width: 40%;
   }
 }
 

@@ -1,0 +1,53 @@
+.scroll-indicator-bullets {
+  position: absolute;
+  z-index: 2;
+  right: 50px;
+
+  &.fixed {
+    position: fixed;
+  }
+}
+
+.scroll-indicator-bullets__link {
+  height: 100%;
+  width: 1px;
+  background-color: #ddd;
+}
+
+.scroll-indicator-bullets__bullet {
+  height: 7px;
+  background: #ddd;
+  width: 7px;
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+
+  &.current {
+    background-color: #777777;
+  }
+
+  &.bullet-domain-1 {
+    top: 0;
+  }
+  &.bullet-domain-2 {
+    top: 30px;
+  }
+  &.bullet-domain-3 {
+    top: 60px;
+  }
+  &.bullet-domain-4 {
+    top: 90px;
+  }
+  &.bullet-domain-5 {
+    top: 120px;
+  }
+  &.bullet-domain-6 {
+    top: 150px;
+  }
+  &.bullet-domain-7 {
+    top: 180px;
+  }
+  &.bullet-domain-8 {
+    top: 210px;
+  }
+}

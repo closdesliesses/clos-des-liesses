@@ -9,10 +9,6 @@ footer {
   @include respond-to(phone) {
 
   }
-
-  .centered-crop-image {
-    height: 100%;
-  }
 }
 
 .footer__banner-quote {
