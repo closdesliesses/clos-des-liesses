@@ -269,6 +269,7 @@ button::-moz-focus-inner {
   font-size: 45px;
   font-weight: 400;
   letter-spacing: 1px;
+  left: 0;
   position: absolute;
   font-family: 'FreightTextProMedium-Regular';
   text-align: center;
