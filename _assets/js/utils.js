@@ -5,7 +5,7 @@ $(document).ready(function(){
   $(window).resize(function() {
     $('.homepage__background-intro, .domain__background-intro').height($(window).height());
 
-    $(".scroll-indicator-bullets").css({"top": $(window).height() + 50 + "px", "height": "210px"});
+    $(".scroll-indicator-bullets").css({"top": $(window).height() + 300 + "px", "height": "210px"});
   });
 
   $(window).trigger('resize');
@@ -30,15 +30,15 @@ $(document).ready(function(){
       $("nav").removeClass("fixed");
     };
 
-    if($scrollTop > ($windowHeight - 101) && $scrollTop < (parseInt($("#domain").height() - $windowHeight, 10) + 150)) {
+    if($scrollTop > ($windowHeight + 130) && $scrollTop < (parseInt($("#domain").height() - $windowHeight, 10) + 300)) {
       $(".scroll-indicator-bullets").addClass("fixed").css({"top": "150px"});;
     }
     else {
-      $(".scroll-indicator-bullets").removeClass("fixed").css({"top": $windowHeight + 50 + "px"});
+      $(".scroll-indicator-bullets").removeClass("fixed").css({"top": $windowHeight + 270 + "px"});
     };
 
-    if($scrollTop > (parseInt($("#domain").height() - $windowHeight, 10) + 150)) {
-      $(".scroll-indicator-bullets").css({"top": (parseInt($("#domain").height() - $windowHeight, 10)) + 300 + "px"});
+    if($scrollTop > (parseInt($("#domain").height() - $windowHeight, 10) + 300)) {
+      $(".scroll-indicator-bullets").css({"top": (parseInt($("#domain").height() - $windowHeight, 10)) + 450 + "px"});
     };
 
     // Color current bullet
