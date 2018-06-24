@@ -20,6 +20,9 @@ $(document).ready(function(){
   });
 
   $(window).scroll(function(){
+
+    AOS.refresh();
+
     var $scrollTop = $(window).scrollTop(),
         $windowHeight = $(window).height();
 
@@ -54,7 +57,7 @@ $(document).ready(function(){
         footer = $('footer').offset().top - 100;
 
     var scrollPos = $(document).scrollTop();
-    console.log('enter');
+
     $('.bullet-domain-1, .bullet-domain-2, .bullet-domain-3, .bullet-domain-4, .bullet-domain-5, .bullet-domain-6, .bullet-domain-7, .bullet-domain-8').removeClass('current');
     if (scrollPos >= domaineBlock1 && scrollPos < domaineBlock2) {
       $('.bullet-domain-1').addClass('current');

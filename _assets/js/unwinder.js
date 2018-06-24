@@ -3,6 +3,7 @@
 $( document ).ready(function() {
 
   $(".specs__section-question, .specs__unwinder").click(function() {
+    AOS.refresh();
     var $answerHeight = $(this).parent(".specs__topic").find(".specs__section-answer-containers").height();
 
     $(this).parents(".specs__topic").siblings().removeClass("specs__topic--opened");
