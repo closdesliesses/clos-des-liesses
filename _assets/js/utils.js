@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   $(window).resize(function() {
-    $('.homepage__background-intro, .domain__background-intro').height($(window).height());
+    $('.homepage__background-intro, .domain__background-intro, .private-event__background-intro').height($(window).height());
 
     $(".scroll-indicator-bullets").css({"top": $(window).height() + 300 + "px", "height": "210px"});
   });
