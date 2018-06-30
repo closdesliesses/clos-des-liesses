@@ -1,4 +1,5 @@
-<div class="scroll-indicator-bullets">
+{% if page.title == "Domaine" %}
+<div class="scroll-indicator-bullets scroll-indicator-bullets--domain">
   <div class="scroll-indicator-bullets__link"></div>
   <a class="js-scrollTo" href="#domain-block-1">
     <div class="scroll-indicator-bullets__bullet bullet-domain-1"></div>
@@ -25,3 +26,36 @@
     <div class="scroll-indicator-bullets__bullet bullet-domain-8"></div>
   </a>
 </div>
+
+{% elsif page.title == "Évènement privé" %}
+<div class="scroll-indicator-bullets scroll-indicator-bullets--private-event">
+  <div class="scroll-indicator-bullets__link"></div>
+  <a class="js-scrollTo" href="#private-event-block-1">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-1"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-2">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-2"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-3">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-3"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-4">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-4"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-5">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-5"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-6">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-6"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-7">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-7"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-8">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-8"></div>
+  </a>
+  <a class="js-scrollTo" href="#private-event-block-9">
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-9"></div>
+  </a>
+</div>
+{% endif %}

@@ -576,22 +576,24 @@ button::-moz-focus-inner {
   left: -3px; }
   .scroll-indicator-bullets__bullet.current {
     background-color: #777777; }
-  .scroll-indicator-bullets__bullet.bullet-domain-1 {
+  .scroll-indicator-bullets__bullet.bullet-domain-1, .scroll-indicator-bullets__bullet.bullet-private-event-1, .scroll-indicator-bullets__bullet.bullet-pro-event-1 {
     top: 0; }
-  .scroll-indicator-bullets__bullet.bullet-domain-2 {
+  .scroll-indicator-bullets__bullet.bullet-domain-2, .scroll-indicator-bullets__bullet.bullet-private-event-2, .scroll-indicator-bullets__bullet.bullet-pro-event-2 {
     top: 30px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-3 {
+  .scroll-indicator-bullets__bullet.bullet-domain-3, .scroll-indicator-bullets__bullet.bullet-private-event-3, .scroll-indicator-bullets__bullet.bullet-pro-event-3 {
     top: 60px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-4 {
+  .scroll-indicator-bullets__bullet.bullet-domain-4, .scroll-indicator-bullets__bullet.bullet-private-event-4, .scroll-indicator-bullets__bullet.bullet-pro-event-4 {
     top: 90px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-5 {
+  .scroll-indicator-bullets__bullet.bullet-domain-5, .scroll-indicator-bullets__bullet.bullet-private-event-5, .scroll-indicator-bullets__bullet.bullet-pro-event-5 {
     top: 120px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-6 {
+  .scroll-indicator-bullets__bullet.bullet-domain-6, .scroll-indicator-bullets__bullet.bullet-private-event-6, .scroll-indicator-bullets__bullet.bullet-pro-event-6 {
     top: 150px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-7 {
+  .scroll-indicator-bullets__bullet.bullet-domain-7, .scroll-indicator-bullets__bullet.bullet-private-event-7, .scroll-indicator-bullets__bullet.bullet-pro-event-7 {
     top: 180px; }
-  .scroll-indicator-bullets__bullet.bullet-domain-8 {
+  .scroll-indicator-bullets__bullet.bullet-domain-8, .scroll-indicator-bullets__bullet.bullet-private-event-8, .scroll-indicator-bullets__bullet.bullet-pro-event-8 {
     top: 210px; }
+  .scroll-indicator-bullets__bullet.bullet-private-event-9, .scroll-indicator-bullets__bullet.bullet-pro-event-9 {
+    top: 240px; }
 
 #desktop-nav {
   position: absolute;

@@ -11,10 +11,12 @@
 
       <div class="homepage__background-intro">
         <h2 class="homepage__text-intro"><span>Un lieu intemporel</span>, pour<br>des souvenirs éternels.</h2>
-        <img class="homepage__arrow-intro" alt="domaine de réception" src="{{ site.baseurl }}/assets/images/01_CDL_Home_arrow.png">
+        <a class="js-scrollTo" href="#homepage-block-1">
+          <img class="homepage__arrow-intro" alt="domaine de réception" src="{{ site.baseurl }}/assets/images/01_CDL_Home_arrow.png">
+        </a>
       </div>
 
-      <div class="homepage__block homepage__block--1">
+      <div class="homepage__block homepage__block--1" id="homepage-block-1">
         <p class="homepage__block__number" data-aos="fade-up">01</p>
         <div class="homepage__block__dash" data-aos="fade-up"></div>
         <h3 class="homepage__block__title" data-aos="fade-up"><span>L'écrin parfait</span> de votre récéption</h3>
@@ -62,6 +64,8 @@
     {% include footer.html %}
 
     {% include script.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/homepage.js?v=0" type="text/javascript"></script>
 
   </body>
 

@@ -26,28 +26,48 @@
     background-color: #777777;
   }
 
-  &.bullet-domain-1 {
+  &.bullet-domain-1,
+  &.bullet-private-event-1,
+  &.bullet-pro-event-1 {
     top: 0;
   }
-  &.bullet-domain-2 {
+  &.bullet-domain-2,
+  &.bullet-private-event-2,
+  &.bullet-pro-event-2 {
     top: 30px;
   }
-  &.bullet-domain-3 {
+  &.bullet-domain-3,
+  &.bullet-private-event-3,
+  &.bullet-pro-event-3 {
     top: 60px;
   }
-  &.bullet-domain-4 {
+  &.bullet-domain-4,
+  &.bullet-private-event-4,
+  &.bullet-pro-event-4 {
     top: 90px;
   }
-  &.bullet-domain-5 {
+  &.bullet-domain-5,
+  &.bullet-private-event-5,
+  &.bullet-pro-event-5 {
     top: 120px;
   }
-  &.bullet-domain-6 {
+  &.bullet-domain-6,
+  &.bullet-private-event-6,
+  &.bullet-pro-event-6 {
     top: 150px;
   }
-  &.bullet-domain-7 {
+  &.bullet-domain-7,
+  &.bullet-private-event-7,
+  &.bullet-pro-event-7 {
     top: 180px;
   }
-  &.bullet-domain-8 {
+  &.bullet-domain-8,
+  &.bullet-private-event-8,
+  &.bullet-pro-event-8 {
     top: 210px;
+  }
+  &.bullet-private-event-9,
+  &.bullet-pro-event-9 {
+    top: 240px;
   }
 }
