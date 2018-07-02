@@ -66,6 +66,7 @@ gulp.task('js', () => {
   return gulp.src(globs.js)
     // .pipe(concat('application.js'))
     // .pipe(rename('application.min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(paths.js));
 });
 
