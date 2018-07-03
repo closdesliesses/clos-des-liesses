@@ -76,6 +76,7 @@ button::-moz-focus-inner {
   min-width: 100%; }
 
 .button-bordered, .homepage__block__button, .private-event__block__button,
+.pro-event__block__button,
 .private-event__contact__button,
 .pro-event__contact__button {
   background-color: #EED59A;
@@ -89,6 +90,7 @@ button::-moz-focus-inner {
   -webkit-transition: background-color .5s;
   transition: background-color .5s; }
   .button-bordered:hover, .homepage__block__button:hover, .private-event__block__button:hover,
+  .pro-event__block__button:hover,
   .private-event__contact__button:hover,
   .pro-event__contact__button:hover {
     background-color: #B29689; }
@@ -510,7 +512,8 @@ button::-moz-focus-inner {
   font-weight: bold;
   letter-spacing: 2px; }
 
-.domain__block__dash {
+.domain__block__dash,
+.pro-event__block__dash {
   height: 30px;
   width: 1px;
   background-color: #eaeaea;
@@ -578,12 +581,14 @@ button::-moz-focus-inner {
     -webkit-filter: brightness(70%);
             filter: brightness(70%); }
 
-.private-event__block__icon {
+.private-event__block__icon,
+.pro-event__block__icon {
   height: 50px;
   margin-bottom: 30px;
   width: auto; }
 
-.private-event__contact {
+.private-event__contact,
+.pro-event__contact {
   background-color: #fdf9ea;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -602,12 +607,18 @@ button::-moz-focus-inner {
   width: 80%;
   margin: 50px auto 100px auto; }
 
-.private-event__contact__title {
+.private-event__contact__title,
+.pro-event__contact__title {
   font-family: 'FreightTextProMedium-Italic';
   font-size: 30px; }
 
-.private-event__contact__text {
+.private-event__contact__text,
+.pro-event__contact__text {
   margin: 20px 0; }
+
+.pro-event__block--centered .pro-event__block__text {
+  text-align: center;
+  margin-bottom: 50px; }
 
 .scroll-indicator-bullets {
   position: absolute;
