@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    <div id="gallery">
+
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_7.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/02_CDL_Domaine_image_8.jpg)"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <!-- <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_8.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_1.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_3.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_4.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_5.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_6.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(../assets/images/img_7.jpg)"></div>
+        </div>
+      </div> -->
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include script.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/gallery.js?v=0" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/assets/js/swiper.min.js?version=0"></script>
+    <script src="{{ site.baseurl }}/assets/js/swiper.min.js.map?version=0"></script>
+
+  </body>
+
+</html>
