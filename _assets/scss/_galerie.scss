@@ -1,6 +1,14 @@
 #gallery {
-  margin-top: 100px;
-  height: 600px;
+  margin-top: 115px;
+}
+
+.gallery__title {
+  color: #404040;
+  font-family: 'FreightTextProMedium-Italic';
+  font-weight: 200;
+  font-size: 45px;
+  padding: 80px 0;
+  text-align: center;
 }
 
 .swiper-container {
@@ -9,50 +17,84 @@
   margin-left: auto;
   margin-right: auto;
   overflow: visible!important;
- }
- .swiper-slide {
+}
+.swiper-wrapper {
+  height: 600px!important;
+}
+
+.swiper-slide {
   background-size: cover;
   background-position: center;
   background-color: black;
- }
- .swiper-slide-next,
- .swiper-slide-prev {
-    opacity: 0.7;
- }
- .gallery-top {
+
+  // margin-right: 5%!important;
+  width: 80%!important;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.5;
+}
+
+.gallery-top {
   height: 90%;
   width: 100%;
- }
- .gallery-thumbs {
+}
+
+.gallery-thumbs {
   height: 10%;
   box-sizing: border-box;
   padding: 10px 0;
- }
- .gallery-thumbs .swiper-slide {
+}
+
+.gallery-thumbs .swiper-slide {
   width: 8%;
   height: 100%;
   opacity: 0.4;
-  @media screen and (max-width: 768px) {
-     width: 20%;
-   }
- }
- .gallery-thumbs .swiper-slide-active {
-  opacity: 1;
- }
 
- .swiper-button-next {
-   background-image: url("../images/next.png")!important;
-   right: 5%!important;
- }
- .swiper-button-prev {
-    background-image: url("../images/prev.png")!important;
-    left: 5%!important;
- }
+  @media screen and (max-width: 768px) {
+    width: 20%;
+  }
+}
  
- .swiper-pagination-bullet {
-   height: 100px!important;
-   width: 100px!important;
-   background-image: url("../images/00_CDL_Footer_image.png")!important;
-   background-size: cover!important;
-   border-radius: 0!important;
- }
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 324px!important;
+}
+
+.swiper-button-next {
+  background-image: url("../images/next.png")!important;
+  right: calc(11.5% - 75px) !important;
+}
+ 
+.swiper-button-prev {
+  background-image: url("../images/prev.png")!important;
+  left: calc(11.5% - 75px) !important;
+}
+
+.swiper-pagination {
+  position: static!important;
+  width: calc(80% + 10px)!important;
+  margin: 50px auto!important;
+  display: flex!important;
+  flex-wrap: wrap!important;
+}
+ 
+.swiper-pagination-bullet {
+  height: 120px!important;
+  background-image: url("../images/00_CDL_Footer_image.png")!important;
+  background-size: cover!important;
+  border-radius: 0!important;
+  opacity: 1!important;
+  // flex: 1;
+  margin: 3px!important;
+  width: calc(11.08% - 6px) !important;
+
+  &.swiper-pagination-bullet-active {
+    opacity: 0.4!important;
+  }
+}

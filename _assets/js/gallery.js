@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  debugger
 
   var galleryTop = new Swiper('.gallery-top', {
     spaceBetween: 10,
@@ -8,8 +9,8 @@ $(document).ready(function () {
     lazyLoading: true,
     autoplay: false,
     speed: 600,
-    slidesPerView: 1.2,
-    spaceBetween: 60,
+    slidesPerView: 'auto',
+    spaceBetween: 75,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
