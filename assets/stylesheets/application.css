@@ -651,25 +651,9 @@ button::-moz-focus-inner {
 .swiper-slide-prev {
   opacity: 0.5; }
 
-.gallery-top {
+.swiper-container {
   height: 90%;
   width: 100%; }
-
-.gallery-thumbs {
-  height: 10%;
-  box-sizing: border-box;
-  padding: 10px 0; }
-
-.gallery-thumbs .swiper-slide {
-  width: 8%;
-  height: 100%;
-  opacity: 0.4; }
-  @media screen and (max-width: 768px) {
-    .gallery-thumbs .swiper-slide {
-      width: 20%; } }
-
-.gallery-thumbs .swiper-slide-active {
-  opacity: 1; }
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -703,6 +687,27 @@ button::-moz-focus-inner {
   width: calc(11.08% - 6px) !important; }
   .swiper-pagination-bullet.swiper-pagination-bullet-active {
     opacity: 0.4 !important; }
+
+.swiper-pagination--domain .swiper-pagination-bullet {
+  background-image: url("../images/domaine/domaine-1.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(2) {
+    background-image: url("../images/domaine/domaine-2.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(3) {
+    background-image: url("../images/domaine/domaine-3.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(4) {
+    background-image: url("../images/domaine/domaine-4.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-5.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-6.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-7.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-8.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-9.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/domaine/domaine-10.jpg") !important; }
 
 .scroll-indicator-bullets {
   position: absolute;
