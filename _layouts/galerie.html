@@ -12,9 +12,9 @@
       <h1 class="gallery__title">Galerie</h1>
 
       <div class="gallery__navigation">
-        <div class="navigation__tab" data-selector="domain">Domaine</div>
-        <div class="navigation__tab" data-selector="ceremony">Cérémonie</div>
-        <div class="navigation__tab" data-selector="cocktail">Cocktail</div>
+        <h2 class="navigation__tab" data-selector="domain">Domaine</h2>
+        <h2 class="navigation__tab" data-selector="ceremony">Cérémonie</h2>
+        <h2 class="navigation__tab" data-selector="cocktail">Cocktail</h2>
       </div>
 
       <div class="swiper-container" id="swiper-container--domain">
@@ -85,6 +85,15 @@
         <div class="swiper-button-prev swiper-button-white"></div>
       </div>
 
+    </div>
+
+    <div class="gallery__contact">
+      <h3 class="gallery__contact__title">Contactez-nous</h3>
+      <p class="gallery__contact__text">
+        Pour obtenir plus d'informations sur le domaine (dates disponibles, tarifs, ...),<br>
+        nous vous invitons à compléter le formulaire de contact :
+      </p>
+      <button class="gallery__contact__button">Formulaire de contact</button>
     </div>
 
     {% include footer.html %}

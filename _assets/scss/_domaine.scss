@@ -335,12 +335,14 @@
 .private-event__block__button,
 .pro-event__block__button,
 .private-event__contact__button,
-.pro-event__contact__button {
+.pro-event__contact__button,
+.gallery__contact__button {
   @extend .button-bordered;
 }
 
 .private-event__contact,
-.pro-event__contact {
+.pro-event__contact,
+.gallery__contact {
   background-color: #fdf9ea;
   display: flex;
   flex-direction: column;
@@ -352,14 +354,17 @@
 }
 
 .private-event__contact__title,
-.pro-event__contact__title {
+.pro-event__contact__title,
+.gallery__contact__title {
   font-family: 'FreightTextProMedium-Italic';
   font-size: 30px;
 }
 
 .private-event__contact__text,
-.pro-event__contact__text {
+.pro-event__contact__text,
+.gallery__contact__text {
   margin: 20px 0;
+  text-align: center;
 }
 
 .pro-event__block--centered {

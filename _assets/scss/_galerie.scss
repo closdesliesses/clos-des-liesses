@@ -25,6 +25,8 @@
     color: #eed499;
     font-weight: bold;
     cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 14px;
 
     &.navigation__tab--selected {
       border-bottom: 6px solid #eed499;

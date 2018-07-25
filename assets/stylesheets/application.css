@@ -78,7 +78,8 @@ button::-moz-focus-inner {
 .button-bordered, .homepage__block__button, .private-event__block__button,
 .pro-event__block__button,
 .private-event__contact__button,
-.pro-event__contact__button {
+.pro-event__contact__button,
+.gallery__contact__button {
   background-color: #EED59A;
   color: white;
   cursor: pointer;
@@ -92,7 +93,8 @@ button::-moz-focus-inner {
   .button-bordered:hover, .homepage__block__button:hover, .private-event__block__button:hover,
   .pro-event__block__button:hover,
   .private-event__contact__button:hover,
-  .pro-event__contact__button:hover {
+  .pro-event__contact__button:hover,
+  .gallery__contact__button:hover {
     background-color: #B29689; }
 
 .blur {
@@ -588,7 +590,8 @@ button::-moz-focus-inner {
   width: auto; }
 
 .private-event__contact,
-.pro-event__contact {
+.pro-event__contact,
+.gallery__contact {
   background-color: #fdf9ea;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -608,13 +611,16 @@ button::-moz-focus-inner {
   margin: 50px auto 100px auto; }
 
 .private-event__contact__title,
-.pro-event__contact__title {
+.pro-event__contact__title,
+.gallery__contact__title {
   font-family: 'FreightTextProMedium-Italic';
   font-size: 30px; }
 
 .private-event__contact__text,
-.pro-event__contact__text {
-  margin: 20px 0; }
+.pro-event__contact__text,
+.gallery__contact__text {
+  margin: 20px 0;
+  text-align: center; }
 
 .pro-event__block--centered .pro-event__block__text {
   text-align: center;
@@ -647,7 +653,9 @@ button::-moz-focus-inner {
     margin: 0 60px;
     color: #eed499;
     font-weight: bold;
-    cursor: pointer; }
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 14px; }
     .gallery__navigation .navigation__tab.navigation__tab--selected {
       border-bottom: 6px solid #eed499; }
 
