@@ -631,6 +631,26 @@ button::-moz-focus-inner {
   padding: 80px 0;
   text-align: center; }
 
+.gallery__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .gallery__navigation .navigation__tab {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0 60px;
+    color: #eed499;
+    font-weight: bold;
+    cursor: pointer; }
+    .gallery__navigation .navigation__tab.navigation__tab--selected {
+      border-bottom: 6px solid #eed499; }
+
 .swiper-container {
   width: 100%;
   height: 300px;
@@ -690,24 +710,94 @@ button::-moz-focus-inner {
 
 .swiper-pagination--domain .swiper-pagination-bullet {
   background-image: url("../images/domaine/domaine-1.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/domaine/domaine-1-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(2) {
-    background-image: url("../images/domaine/domaine-2.jpg") !important; }
+    background-image: url("../images/domaine/domaine-2-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(3) {
-    background-image: url("../images/domaine/domaine-3.jpg") !important; }
+    background-image: url("../images/domaine/domaine-3-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(4) {
-    background-image: url("../images/domaine/domaine-4.jpg") !important; }
+    background-image: url("../images/domaine/domaine-4-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-5.jpg") !important; }
-  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-6.jpg") !important; }
-  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-7.jpg") !important; }
-  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-8.jpg") !important; }
-  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-9.jpg") !important; }
-  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/domaine/domaine-10.jpg") !important; }
+    background-image: url("../images/domaine/domaine-5-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(6) {
+    background-image: url("../images/domaine/domaine-6-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(7) {
+    background-image: url("../images/domaine/domaine-7-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(8) {
+    background-image: url("../images/domaine/domaine-8-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(9) {
+    background-image: url("../images/domaine/domaine-9-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(10) {
+    background-image: url("../images/domaine/domaine-10-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(11) {
+    background-image: url("../images/domaine/domaine-11-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(12) {
+    background-image: url("../images/domaine/domaine-12-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(13) {
+    background-image: url("../images/domaine/domaine-13-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(14) {
+    background-image: url("../images/domaine/domaine-14-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(15) {
+    background-image: url("../images/domaine/domaine-15-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(16) {
+    background-image: url("../images/domaine/domaine-16-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(17) {
+    background-image: url("../images/domaine/domaine-17-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(18) {
+    background-image: url("../images/domaine/domaine-18-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(19) {
+    background-image: url("../images/domaine/domaine-19-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(20) {
+    background-image: url("../images/domaine/domaine-20-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(21) {
+    background-image: url("../images/domaine/domaine-21-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(22) {
+    background-image: url("../images/domaine/domaine-22-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(23) {
+    background-image: url("../images/domaine/domaine-23-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(24) {
+    background-image: url("../images/domaine/domaine-24-min.jpg") !important; }
+  .swiper-pagination--domain .swiper-pagination-bullet:nth-child(25) {
+    background-image: url("../images/domaine/domaine-25-min.jpg") !important; }
+
+.swiper-pagination--ceremony .swiper-pagination-bullet {
+  background-image: url("../images/ceremonie/ceremonie-1.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/ceremonie/ceremonie-1.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(2) {
+    background-image: url("../images/ceremonie/ceremonie-2.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(3) {
+    background-image: url("../images/ceremonie/ceremonie-3.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(4) {
+    background-image: url("../images/ceremonie/ceremonie-4.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/ceremonie/ceremonie-5.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(6) {
+    background-image: url("../images/ceremonie/ceremonie-6.jpg") !important; }
+  .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(7) {
+    background-image: url("../images/ceremonie/ceremonie-7.jpg") !important; }
+
+.swiper-pagination--cocktail .swiper-pagination-bullet {
+  background-image: url("../images/cocktail/cocktail-1.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/cocktail/cocktail-1.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(2) {
+    background-image: url("../images/cocktail/cocktail-2.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(3) {
+    background-image: url("../images/cocktail/cocktail-3.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(4) {
+    background-image: url("../images/cocktail/cocktail-4.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/cocktail/cocktail-5.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(6) {
+    background-image: url("../images/cocktail/cocktail-6.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(7) {
+    background-image: url("../images/cocktail/cocktail-7.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(8) {
+    background-image: url("../images/cocktail/cocktail-8.jpg") !important; }
+  .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(9) {
+    background-image: url("../images/cocktail/cocktail-9.jpg") !important; }
 
 .scroll-indicator-bullets {
   position: absolute;

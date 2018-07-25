@@ -11,6 +11,27 @@
   text-align: center;
 }
 
+.gallery__navigation {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+
+  .navigation__tab {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin: 0 60px;
+    color: #eed499;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.navigation__tab--selected {
+      border-bottom: 6px solid #eed499;
+    }
+  }
+}
+
 .swiper-container {
   width: 100%;
   height: 300px;
@@ -88,32 +109,32 @@
   .swiper-pagination-bullet {
     background-image: url("../images/domaine/domaine-1.jpg")!important;
 
-    &:nth-child(2) {
-      background-image: url("../images/domaine/domaine-2.jpg")!important;
-    }
-    &:nth-child(3) {
-      background-image: url("../images/domaine/domaine-3.jpg")!important;
-    }
-    &:nth-child(4) {
-      background-image: url("../images/domaine/domaine-4.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-5.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-6.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-7.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-8.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-9.jpg")!important;
-    }
-    &:nth-child(5) {
-      background-image: url("../images/domaine/domaine-10.jpg")!important;
-    }
+    @for $i from 1 to 26 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/domaine/domaine-#{$i}-min.jpg")!important;
+      }
+    }  
+  }
+}
+.swiper-pagination--ceremony {
+  .swiper-pagination-bullet {
+    background-image: url("../images/ceremonie/ceremonie-1.jpg")!important;
+
+    @for $i from 1 to 8 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/ceremonie/ceremonie-#{$i}.jpg")!important;
+      }
+    }  
+  }
+}
+.swiper-pagination--cocktail {
+  .swiper-pagination-bullet {
+    background-image: url("../images/cocktail/cocktail-1.jpg")!important;
+
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/cocktail/cocktail-#{$i}.jpg")!important;
+      }
+    }  
   }
 }
