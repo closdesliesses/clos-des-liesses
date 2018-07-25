@@ -13,7 +13,8 @@ html {
 body {
   color: #404040;
   font-family: 'Nunito', sans-serif;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow-x: hidden; }
 
 a,
 a:active,
