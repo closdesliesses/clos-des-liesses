@@ -7,7 +7,7 @@
   font-family: 'FreightTextProMedium-Italic';
   font-weight: 200;
   font-size: 45px;
-  padding: 80px 0;
+  padding: 55px 0;
   text-align: center;
 }
 
@@ -78,7 +78,7 @@
   background-image: url("../images/next.png")!important;
   right: calc(11.5% - 75px) !important;
 }
- 
+
 .swiper-button-prev {
   background-image: url("../images/prev.png")!important;
   left: calc(11.5% - 75px) !important;
@@ -91,7 +91,7 @@
   display: flex!important;
   flex-wrap: wrap!important;
 }
- 
+
 .swiper-pagination-bullet {
   height: 120px!important;
   background-image: url("../images/00_CDL_Footer_image.png")!important;
@@ -115,7 +115,7 @@
       &:nth-child(#{$i}) {
         background-image: url("../images/domaine/domaine-#{$i}-min.jpg")!important;
       }
-    }  
+    }
   }
 }
 .swiper-pagination--ceremony {
@@ -126,7 +126,7 @@
       &:nth-child(#{$i}) {
         background-image: url("../images/ceremonie/ceremonie-#{$i}.jpg")!important;
       }
-    }  
+    }
   }
 }
 .swiper-pagination--cocktail {
@@ -137,6 +137,6 @@
       &:nth-child(#{$i}) {
         background-image: url("../images/cocktail/cocktail-#{$i}.jpg")!important;
       }
-    }  
+    }
   }
 }
