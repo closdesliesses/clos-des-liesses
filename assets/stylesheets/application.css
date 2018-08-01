@@ -651,7 +651,7 @@ button::-moz-focus-inner {
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
-    margin: 0 60px;
+    margin: 0 50px;
     color: #eed499;
     font-weight: bold;
     cursor: pointer;
@@ -718,7 +718,7 @@ button::-moz-focus-inner {
     opacity: 0.4 !important; }
 
 .swiper-pagination--domain .swiper-pagination-bullet {
-  background-image: url("../images/domaine/domaine-1.jpg") !important; }
+  background-image: url("../images/domaine/domaine-1-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(1) {
     background-image: url("../images/domaine/domaine-1-min.jpg") !important; }
   .swiper-pagination--domain .swiper-pagination-bullet:nth-child(2) {
@@ -771,42 +771,143 @@ button::-moz-focus-inner {
     background-image: url("../images/domaine/domaine-25-min.jpg") !important; }
 
 .swiper-pagination--ceremony .swiper-pagination-bullet {
-  background-image: url("../images/ceremonie/ceremonie-1.jpg") !important; }
+  background-image: url("../images/ceremonie/ceremonie-1-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(1) {
-    background-image: url("../images/ceremonie/ceremonie-1.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-1-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(2) {
-    background-image: url("../images/ceremonie/ceremonie-2.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-2-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(3) {
-    background-image: url("../images/ceremonie/ceremonie-3.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-3-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(4) {
-    background-image: url("../images/ceremonie/ceremonie-4.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-4-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/ceremonie/ceremonie-5.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-5-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(6) {
-    background-image: url("../images/ceremonie/ceremonie-6.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-6-min.jpg") !important; }
   .swiper-pagination--ceremony .swiper-pagination-bullet:nth-child(7) {
-    background-image: url("../images/ceremonie/ceremonie-7.jpg") !important; }
+    background-image: url("../images/ceremonie/ceremonie-7-min.jpg") !important; }
 
 .swiper-pagination--cocktail .swiper-pagination-bullet {
-  background-image: url("../images/cocktail/cocktail-1.jpg") !important; }
+  background-image: url("../images/cocktail/cocktail-1-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(1) {
-    background-image: url("../images/cocktail/cocktail-1.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-1-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(2) {
-    background-image: url("../images/cocktail/cocktail-2.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-2-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(3) {
-    background-image: url("../images/cocktail/cocktail-3.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-3-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(4) {
-    background-image: url("../images/cocktail/cocktail-4.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-4-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(5) {
-    background-image: url("../images/cocktail/cocktail-5.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-5-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(6) {
-    background-image: url("../images/cocktail/cocktail-6.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-6-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(7) {
-    background-image: url("../images/cocktail/cocktail-7.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-7-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(8) {
-    background-image: url("../images/cocktail/cocktail-8.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-8-min.jpg") !important; }
   .swiper-pagination--cocktail .swiper-pagination-bullet:nth-child(9) {
-    background-image: url("../images/cocktail/cocktail-9.jpg") !important; }
+    background-image: url("../images/cocktail/cocktail-9-min.jpg") !important; }
+
+.swiper-pagination--diner .swiper-pagination-bullet {
+  background-image: url("../images/diner/diner-1-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/diner/diner-1-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(2) {
+    background-image: url("../images/diner/diner-2-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(3) {
+    background-image: url("../images/diner/diner-3-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(4) {
+    background-image: url("../images/diner/diner-4-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/diner/diner-5-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(6) {
+    background-image: url("../images/diner/diner-6-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(7) {
+    background-image: url("../images/diner/diner-7-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(8) {
+    background-image: url("../images/diner/diner-8-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(9) {
+    background-image: url("../images/diner/diner-9-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(10) {
+    background-image: url("../images/diner/diner-10-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(11) {
+    background-image: url("../images/diner/diner-11-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(12) {
+    background-image: url("../images/diner/diner-12-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(13) {
+    background-image: url("../images/diner/diner-13-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(14) {
+    background-image: url("../images/diner/diner-14-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(15) {
+    background-image: url("../images/diner/diner-15-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(16) {
+    background-image: url("../images/diner/diner-16-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(17) {
+    background-image: url("../images/diner/diner-17-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(18) {
+    background-image: url("../images/diner/diner-18-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(19) {
+    background-image: url("../images/diner/diner-19-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(20) {
+    background-image: url("../images/diner/diner-20-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(21) {
+    background-image: url("../images/diner/diner-21-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(22) {
+    background-image: url("../images/diner/diner-22-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(23) {
+    background-image: url("../images/diner/diner-23-min.jpg") !important; }
+  .swiper-pagination--diner .swiper-pagination-bullet:nth-child(24) {
+    background-image: url("../images/diner/diner-24-min.jpg") !important; }
+
+.swiper-pagination--hebergement .swiper-pagination-bullet {
+  background-image: url("../images/hebergement/hebergement-1-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/hebergement/hebergement-1-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(2) {
+    background-image: url("../images/hebergement/hebergement-2-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(3) {
+    background-image: url("../images/hebergement/hebergement-3-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(4) {
+    background-image: url("../images/hebergement/hebergement-4-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(5) {
+    background-image: url("../images/hebergement/hebergement-5-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(6) {
+    background-image: url("../images/hebergement/hebergement-6-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(7) {
+    background-image: url("../images/hebergement/hebergement-7-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(8) {
+    background-image: url("../images/hebergement/hebergement-8-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(9) {
+    background-image: url("../images/hebergement/hebergement-9-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(10) {
+    background-image: url("../images/hebergement/hebergement-10-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(11) {
+    background-image: url("../images/hebergement/hebergement-11-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(12) {
+    background-image: url("../images/hebergement/hebergement-12-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(13) {
+    background-image: url("../images/hebergement/hebergement-13-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(14) {
+    background-image: url("../images/hebergement/hebergement-14-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(15) {
+    background-image: url("../images/hebergement/hebergement-15-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(16) {
+    background-image: url("../images/hebergement/hebergement-16-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(17) {
+    background-image: url("../images/hebergement/hebergement-17-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(18) {
+    background-image: url("../images/hebergement/hebergement-18-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(19) {
+    background-image: url("../images/hebergement/hebergement-19-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(20) {
+    background-image: url("../images/hebergement/hebergement-20-min.jpg") !important; }
+  .swiper-pagination--hebergement .swiper-pagination-bullet:nth-child(21) {
+    background-image: url("../images/hebergement/hebergement-21-min.jpg") !important; }
+
+.swiper-pagination--videos .swiper-pagination-bullet {
+  background-image: url("../images/videos/video-1-min.jpg") !important; }
+  .swiper-pagination--videos .swiper-pagination-bullet:nth-child(1) {
+    background-image: url("../images/videos/video-1-min.jpg") !important; }
 
 .scroll-indicator-bullets {
   position: absolute;

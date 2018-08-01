@@ -21,7 +21,7 @@
     text-align: center;
     text-transform: uppercase;
     padding: 10px 0;
-    margin: 0 60px;
+    margin: 0 50px;
     color: #eed499;
     font-weight: bold;
     cursor: pointer;
@@ -109,7 +109,7 @@
 
 .swiper-pagination--domain {
   .swiper-pagination-bullet {
-    background-image: url("../images/domaine/domaine-1.jpg")!important;
+    background-image: url("../images/domaine/domaine-1-min.jpg")!important;
 
     @for $i from 1 to 26 {
       &:nth-child(#{$i}) {
@@ -120,22 +120,55 @@
 }
 .swiper-pagination--ceremony {
   .swiper-pagination-bullet {
-    background-image: url("../images/ceremonie/ceremonie-1.jpg")!important;
+    background-image: url("../images/ceremonie/ceremonie-1-min.jpg")!important;
 
     @for $i from 1 to 8 {
       &:nth-child(#{$i}) {
-        background-image: url("../images/ceremonie/ceremonie-#{$i}.jpg")!important;
+        background-image: url("../images/ceremonie/ceremonie-#{$i}-min.jpg")!important;
       }
     }
   }
 }
 .swiper-pagination--cocktail {
   .swiper-pagination-bullet {
-    background-image: url("../images/cocktail/cocktail-1.jpg")!important;
+    background-image: url("../images/cocktail/cocktail-1-min.jpg")!important;
 
     @for $i from 1 to 10 {
       &:nth-child(#{$i}) {
-        background-image: url("../images/cocktail/cocktail-#{$i}.jpg")!important;
+        background-image: url("../images/cocktail/cocktail-#{$i}-min.jpg")!important;
+      }
+    }
+  }
+}
+.swiper-pagination--diner {
+  .swiper-pagination-bullet {
+    background-image: url("../images/diner/diner-1-min.jpg")!important;
+
+    @for $i from 1 to 25 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/diner/diner-#{$i}-min.jpg")!important;
+      }
+    }
+  }
+}
+.swiper-pagination--hebergement {
+  .swiper-pagination-bullet {
+    background-image: url("../images/hebergement/hebergement-1-min.jpg")!important;
+
+    @for $i from 1 to 22 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/hebergement/hebergement-#{$i}-min.jpg")!important;
+      }
+    }
+  }
+}
+.swiper-pagination--videos {
+  .swiper-pagination-bullet {
+    background-image: url("../images/videos/video-1-min.jpg")!important;
+
+    @for $i from 1 to 2 {
+      &:nth-child(#{$i}) {
+        background-image: url("../images/videos/video-#{$i}-min.jpg")!important;
       }
     }
   }
