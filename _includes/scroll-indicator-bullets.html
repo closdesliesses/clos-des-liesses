@@ -2,28 +2,28 @@
 <div class="scroll-indicator-bullets scroll-indicator-bullets--domain">
   <div class="scroll-indicator-bullets__link"></div>
   <a class="js-scrollTo" href="#domain-block-1">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-1"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-1" title="L'entrée du Domaine"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-2">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-2"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-2" title="La tente de réception"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-3">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-3"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-3" title="La salle de réception"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-4">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-4"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-4" title="Le gîte"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-5">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-5"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-5" title="La roulotte"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-6">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-6"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-6" title="Espace enfants"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-7">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-7"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-7" title="Les extérieurs"></div>
   </a>
   <a class="js-scrollTo" href="#domain-block-8">
-    <div class="scroll-indicator-bullets__bullet bullet-domain-8"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-domain-8" title="Un peu d'histoire"></div>
   </a>
 </div>
 
@@ -31,31 +31,39 @@
 <div class="scroll-indicator-bullets scroll-indicator-bullets--private-event">
   <div class="scroll-indicator-bullets__link"></div>
   <a class="js-scrollTo" href="#private-event-block-1">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-1"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-1" title="L'arrivée des mariés"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-2">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-2"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-2" title="La cérémonie"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-3">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-3"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-3" title="La séance photo"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-4">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-4"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-4" title="Le cocktail"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-5">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-5"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-5" title="Le dîner et la soirée"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-6">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-6"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-6" title="Espace enfants"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-7">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-7"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-7" title="Les hébergements"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-8">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-8"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-8" title="La suite nuptiale"></div>
   </a>
   <a class="js-scrollTo" href="#private-event-block-9">
-    <div class="scroll-indicator-bullets__bullet bullet-private-event-9"></div>
+    <div class="scroll-indicator-bullets__bullet bullet-private-event-9" title="Le brunch"></div>
   </a>
 </div>
 {% endif %}
+
+<script src="https://unpkg.com/tippy.js/dist/tippy.all.min.js"></script>
+<!-- Initialize tooltips by calling the `tippy` function with a CSS selector -->
+<script>
+  tippy('.scroll-indicator-bullets__bullet', {
+    arrow: true,
+  });
+</script>

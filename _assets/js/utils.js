@@ -33,7 +33,7 @@ $(document).ready(function(){
 		$('html, body').animate( { scrollTop: $(page).offset().top - 100 }, 600 );
 		return false;
   });
-  
+
   if(window.location.href.indexOf("galerie") > -1) {
     $("nav").addClass("black");
   }
