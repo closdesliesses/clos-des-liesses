@@ -34,7 +34,7 @@ $(document).ready(function(){
 		return false;
   });
 
-  if(window.location.href.indexOf("galerie") > -1) {
+  if(window.location.href.indexOf("galerie") > -1 || window.location.href.indexOf("contact") > -1) {
     $("nav").addClass("black");
   }
 

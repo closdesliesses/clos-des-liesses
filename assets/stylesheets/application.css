@@ -80,7 +80,7 @@ button::-moz-focus-inner {
 .pro-event__block__button,
 .private-event__contact__button,
 .pro-event__contact__button,
-.gallery__contact__button {
+.gallery__contact__button, .contact__tab__button {
   background-color: #EED59A;
   color: white;
   cursor: pointer;
@@ -95,7 +95,7 @@ button::-moz-focus-inner {
   .pro-event__block__button:hover,
   .private-event__contact__button:hover,
   .pro-event__contact__button:hover,
-  .gallery__contact__button:hover {
+  .gallery__contact__button:hover, .contact__tab__button:hover {
     background-color: #B29689; }
 
 .blur {
@@ -908,6 +908,54 @@ button::-moz-focus-inner {
   background-image: url("../images/videos/video-1-min.jpg") !important; }
   .swiper-pagination--videos .swiper-pagination-bullet:nth-child(1) {
     background-image: url("../images/videos/video-1-min.jpg") !important; }
+
+#contact {
+  margin: 115px auto 0 auto;
+  width: 80%; }
+
+.contact__title {
+  color: #404040;
+  font-family: 'FreightTextProMedium-Italic';
+  font-weight: 200;
+  font-size: 45px;
+  padding: 55px 0;
+  text-align: center; }
+
+.contact__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact__tab {
+  padding: 50px 20px;
+  background-color: #fdf9ea;
+  margin-right: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .contact__tab:last-child {
+    margin-left: 15px;
+    margin-right: 0; }
+
+.contact__tab__title {
+  font-family: 'FreightTextProMedium-Regular';
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #616161; }
 
 .scroll-indicator-bullets {
   position: absolute;

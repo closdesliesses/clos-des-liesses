@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include nav.html %}
+
+    <div id="contact">
+      <h1 class="contact__title">Contact</h1>
+
+      <div class="contact__tabs">
+        <div class="contact__tab">
+          <h2 class="contact__tab__title">Votre évènement privé</h2>
+          <button class="contact__tab__button">Formulaire de contact</button>
+        </div>
+        <div class="contact__tab">
+          <h2 class="contact__tab__title">Votre évènement professionnel</h2>
+          <button class="contact__tab__button">Formulaire de contact</button>
+        </div>
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include script.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/contact.js?v=0" type="text/javascript"></script>
+
+  </body>
+
+</html>

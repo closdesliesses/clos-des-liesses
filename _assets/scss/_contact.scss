@@ -1,0 +1,45 @@
+#contact {
+  margin: 115px auto 0 auto;
+  width: 80%;
+}
+
+.contact__title {
+  color: #404040;
+  font-family: 'FreightTextProMedium-Italic';
+  font-weight: 200;
+  font-size: 45px;
+  padding: 55px 0;
+  text-align: center;
+}
+
+.contact__tabs {
+  display: flex;
+}
+
+.contact__tab {
+  padding: 50px 20px;
+  background-color: #fdf9ea;
+  margin-right: 15px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &:last-child {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+.contact__tab__title {
+  font-family: 'FreightTextProMedium-Regular';
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #616161;
+}
+
+.contact__tab__button {
+  @extend .button-bordered;
+}
