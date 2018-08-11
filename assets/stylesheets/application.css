@@ -957,6 +957,20 @@ button::-moz-focus-inner {
   font-size: 26px;
   color: #616161; }
 
+.contact__text-container {
+  margin: 70px 0; }
+
+.contact__text-block {
+  text-align: center;
+  font-size: 15px;
+  line-height: 28px;
+  margin: 20px 0; }
+  .contact__text-block span {
+    font-weight: bold; }
+
+.contact__map {
+  margin-bottom: 80px; }
+
 .scroll-indicator-bullets {
   position: absolute;
   z-index: 2;
