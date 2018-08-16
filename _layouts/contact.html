@@ -21,6 +21,113 @@
         </div>
       </div>
 
+      <div class="contact__form-container" id="contact__private-block">
+        <form class="contact-form" method="POST" action="https://formspree.io/tiffany.vachez@outlook.com">
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Type d'évènement*</h3>
+            <input type="hidden" name="TYPE D'ÉVÈNEMENT :" value=""/>
+            <div class="contact-form__row">
+              <input type="radio" id="typeChoice1" name="Type" value="Mariage" required>
+              <label class="contact-form__radio-label" for="typeChoice1">Mariage</label>
+              <input type="radio" id="typeChoice2" name="Type" value="Anniversaire" required>
+              <label class="contact-form__radio-label" for="typeChoice2">Anniversaire</label>
+              <input type="radio" id="typeChoice3" name="Type" value="Autre" required>
+              <label class="contact-form__radio-label" for="typeChoice3">Autre :</label>
+              <input class="contact-form__input-text" type="text" name="Autre évènement" placeholder="précisez" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Invités</h3>
+            <input type="hidden" name="INVITÉS :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Nombre d'adultes*</p>
+              <span class="contact-form__input-number-decrement" onclick="decrement('adultes')">–</span>
+              <input class="contact-form__input-number" type="text" name="Nombre d'adultes" id="adultes" value="1" min="1" required>
+              <span class="contact-form__input-number-increment" onclick="increment('adultes')">+</span>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Nombre d'enfants</p>
+              <span class="contact-form__input-number-decrement" onclick="decrement('enfants')">–</span>
+              <input class="contact-form__input-number" type="text" name="Nombre d'enfants" id="enfants" value="0" min="0">
+              <span class="contact-form__input-number-increment" onclick="increment('enfants')">+</span>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Demande spécifique</p>
+              <textarea class="contact-form__textarea" name="Demande spécifique" placeholder="votre demande en quelques mots..." autocomplete="off"></textarea>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Date</h3>
+            <input type="hidden" name="DATE :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Date souhaitée (choix 1)</p>
+              <img class="contact-form__input-icon" id="image-date-1" src="{{ site.baseurl }}/assets/images/icons/calendar.png" alt="calendar-icon">
+              <input class="contact-form__input-date" id="input-date-1" type="text" name="date 1" placeholder="JJ/MM/AAAA" autocomplete="off" readonly/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Date souhaitée (choix 2)</p>
+              <img class="contact-form__input-icon" id="image-date-2" src="{{ site.baseurl }}/assets/images/icons/calendar.png" alt="calendar-icon">
+              <input class="contact-form__input-date" id="input-date-2" type="text" name="date 2" placeholder="JJ/MM/AAAA" autocomplete="off" readonly/>
+            </div>
+            <div class="contact-form__row">
+              <input type="checkbox" id="undeterminedDateChoice" name="Non déterminée" value="Non déterminée">
+              <label class="contact-form__radio-label" for="undeterminedDateChoice">Date encore non déterminée</label>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Coordonnées</h3>
+            <input type="hidden" name="COORDONNEES :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Nom*</p>
+              <input class="contact-form__input-text" type="text" name="Nom" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Prénom*</p>
+              <input class="contact-form__input-text" type="text" name="Prénom" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Email*</p>
+              <input class="contact-form__input-text" type="email" name="Email" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Téléphone*</p>
+              <input class="contact-form__input-text" type="phone" name="Téléphone" autocomplete="off" required/>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Comment avez-vous connu notre domaine ?*</h3>
+            <input type="hidden" name="CONNAISSANCE DU DOMAINE :" value=""/>
+            <div class="contact-form__row">
+              <input type="radio" id="choice1" name="Choix" value="Recherche internet">
+              <label class="contact-form__radio-label margin-bottom" for="choice1">Recherche internet</label>
+              <input type="radio" id="choice2" name="Choix" value="Mariage.net" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice2">Mariage.net</label>
+              <input type="radio" id="choice3" name="Choix" value="1001salles.com" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice3">1001salles.com</label>
+              <input type="radio" id="choice4" name="Choix" value="Lyon-mariages.com" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice4">Lyon-mariages.com</label>
+              <input type="radio" id="choice5" name="Choix" value="Bouche à oreille" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice5">Bouche à oreille</label>
+              <input type="radio" id="choice6" name="Choix" value="Partenaire du Domaine" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice6">Partenaire du Domaine</label>
+              <input type="radio" id="choice7" name="Choix" value="Lors d'un mariage" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice7">Lors d'un mariage</label>
+              <input type="radio" id="choice8" name="Choix" value="Autre" required>
+              <label class="contact-form__radio-label margin-bottom" for="choice8">Autre :</label>
+              <input class="contact-form__input-text" type="text" name="Autre" placeholder="précisez">
+            </div>
+          </div>
+
+          <button class="contact-form__button" type="submit">Envoyer</button>
+
+        </form>
+      </div>
+
       <div class="contact__text-container">
         <p class="contact__text-block">
           Pour toute question ou renseignement, n’hésitez pas à contacter Sandie<br>
@@ -51,6 +158,7 @@
     {% include script.html %}
 
     <script src="{{ site.baseurl }}/assets/js/contact.js?v=0" type="text/javascript"></script>
+    <script src="https://unpkg.com/js-datepicker"></script>
 
   </body>
 

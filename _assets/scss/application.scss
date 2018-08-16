@@ -99,6 +99,10 @@ button::-moz-focus-inner {
   &:hover {
     background-color: #B29689;
   }
+
+  &:focus {
+    outline: 0 !important;
+  }
 }
 
 .blur {
