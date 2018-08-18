@@ -8,7 +8,7 @@ $(document).ready(function(){
   });
 
   $("#menuToggle").find("input").click(function() {
-    $("#homepage").toggleClass("blur");
+    $("#homepage, #domain, #event-pro, #private-event, #gallery, #contact, #phone-nav > a").toggleClass("blur");
   });
 
   $(window).scroll(function(){

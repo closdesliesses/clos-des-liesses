@@ -13,6 +13,10 @@
   margin:0;
   padding:0;
   position: relative;
+
+  @include respond-to(phone) {
+    background-position: right;
+  }
 }
 
 .homepage__text-intro {
@@ -28,6 +32,20 @@
   span {
     font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
+  }
+
+  br.mobile {
+    display: none;
+  }
+
+  @include respond-to(phone) {
+    font-size: 42px;
+    right: 5%;
+    text-align: right;
+
+    br.mobile {
+      display: inline;
+    }
   }
 }
 
@@ -47,15 +65,35 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    padding: 70px 25px;
+  }
 }
 
 .homepage__block--1 {
   padding-bottom: 150px;
 
+  @include respond-to(phone) {
+    padding-bottom: 70px;
+  }
+
+  .homepage__block__title {
+    @include respond-to(phone) {
+      text-align: center;
+    }
+  }
+
   .homepage__block__text {
 
     &:first-child {
       margin-right: 70px;
+
+      @include respond-to(phone) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -64,8 +102,16 @@
   background-color: #FDFAEA;
   flex-direction: row;
 
+  @include respond-to(phone) {
+    flex-direction: column-reverse;
+  }
+
   .homepage__block__content {
     margin-right: calc(50% + 100px);
+
+    @include respond-to(phone) {
+      margin: 0;
+    }
   }
 
   .homepage__block__text,
@@ -77,9 +123,18 @@
 .homepage__block--3 {
   padding-bottom: 200px;
 
+  @include respond-to(phone) {
+    flex-direction: column;
+    padding-bottom: 70px;
+  }
+
   .homepage__block__content {
     margin-left: calc(50% + 100px);
     align-items: flex-start;
+
+    @include respond-to(phone) {
+      margin: 0;
+    }
   }
 
   .homepage__block__text,
@@ -92,6 +147,13 @@
     top: 100px;
     right: 50%;
     left: auto;
+
+    @include respond-to(phone) {
+      overflow: initial;
+      height: auto;
+      top: auto;
+      right: auto;
+    }
   }
 }
 
@@ -100,6 +162,10 @@
   align-items: flex-end;
   flex-direction: column;
   width: 50%;
+
+  @include respond-to(phone) {
+    width: 100%;
+  }
 }
 
 .homepage__block__number {
@@ -124,11 +190,24 @@
     font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
   }
+
+  @include respond-to(phone) {
+    font-size: 40px;
+  }
 }
 
 .homepage__block__text-container {
   display: flex;
   margin: 70px 0 50px 0;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    margin: 50px 0;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .homepage__block__text {
@@ -148,4 +227,24 @@
   position: absolute;
   top: -50px;
   left: 50%;
+
+  @include respond-to(phone) {
+    width: auto;
+    overflow: initial;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+
+    .centered-crop-image {
+      position: static;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      margin: -70px -25px 50px -25px;
+      height: auto;
+      width: calc(100% + 50px);
+    }
+  }
 }
