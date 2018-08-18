@@ -45,6 +45,19 @@
     font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
   }
+
+  br.mobile {
+    display: none;
+  }
+
+  @include respond-to(phone) {
+    br.mobile {
+      display: inline;
+    }
+    br.desktop {
+      display: none;
+    }
+  }
 }
 
 // Unwinder
@@ -52,6 +65,11 @@
 .specs {
   width: 80%;
   margin: 50px auto;
+
+  @include respond-to(phone) {
+    width: 90%;
+    margin: 30px auto;
+  }
 
   &__content {
     background-color: white;
@@ -84,14 +102,11 @@
         background-image: url("../images/icons/minus-icon-white.svg");
       }
     }
-    .specs__section-answer-wrapper {
-
-    }
   }
 
   &__unwinder {
     background-image: url("../images/icons/plus-icon.svg");
-    background-size: 20px;
+    background-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
@@ -99,7 +114,7 @@
     position: absolute;
     padding: 20px;
     right: 10px;
-    top: 10px;
+    top: 8px;
     transition: all .3s;
     width: 20px;
 
@@ -116,6 +131,10 @@
     right: 60px;
     top: 21px;
     font-family: 'FreightTextProMedium-Italic';
+
+    @include respond-to(phone) {
+      display: none;
+    }
   }
 
   &__section-question {
@@ -127,8 +146,14 @@
     text-transform: uppercase;
 
     @include respond-to(phone) {
-      font-size: 12px;
-      padding: 20px 40px 20px 0;
+      font-size: 13px;
+      padding: 20px;
+      letter-spacing: 1px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 11px;
+      padding: 20px;
+      letter-spacing: 1px;
     }
   }
 
@@ -180,6 +205,23 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @include respond-to(phone) {
+    flex-direction: column-reverse;
+    padding: 50px 25px;
+  }
+}
+
+#private-event {
+
+  @include respond-to(phone) {
+    #private-event-block-1 {
+      margin-top: 50px;
+    }
+    .private-event__block__button {
+      margin: auto;
+    }
+  }
 }
 
 .domain__block--inverted,
@@ -192,6 +234,11 @@
     margin-right: calc(50% + 100px);
     margin-left: auto;
     align-items: flex-end;
+
+    @include respond-to(phone) {
+      margin-right: 0;
+      width: 100%;
+    }
   }
 
   .domain__block__text,
@@ -223,12 +270,39 @@
     margin-left: auto;
     margin-bottom: 70px;
     width: 100%;
+
+    @include respond-to(phone) {
+      margin-bottom: 0;
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+
+      .centered-crop-image {
+        margin: 40px -25px 0 -25px;
+      }
+    }
   }
 
   .domain__block__text-container,
   .private-event__block__text-container,
   .pro-event__block__text-container {
     margin-left: 60%;
+
+    @include respond-to(phone) {
+      margin-left: 0;
+    }
+  }
+
+  .domain__block__text,
+  .private-event__block__text,
+  .pro-event__block__text,
+  .domain__block__title,
+  .private-event__block__title,
+  .pro-event__block__title {
+
+    @include respond-to(phone) {
+      text-align: center;
+    }
   }
 
   .domain__block__image,
@@ -237,6 +311,12 @@
     height: 690px;
     top: 255px;
     width: 40%;
+
+    @include respond-to(phone) {
+      width: 100%;
+      height: auto;
+      top: auto;
+    }
   }
 }
 
@@ -249,6 +329,12 @@
   width: 50%;
   margin-left: calc(50% + 100px);
   height: 500px;
+
+  @include respond-to(phone) {
+    height: auto;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .domain__block__number {
@@ -277,6 +363,10 @@
     font-family: 'FreightTextProMedium-Italic';
     letter-spacing: 0;
   }
+
+  @include respond-to(phone) {
+    font-size: 40px;
+  }
 }
 
 .domain__block__text-container,
@@ -285,6 +375,11 @@
   display: flex;
   flex-direction: column;
   margin: 40px 0 60px 0;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    margin: 30px 0;
+  }
 }
 
 .private-event__block__text-container {
@@ -299,6 +394,10 @@
   font-size: 16px;
   text-align: left;
   margin: 20px 0;
+
+  br {
+    display: none;
+  }
 }
 
 .domain__block__image,
@@ -310,6 +409,26 @@
   position: absolute;
   right: 50%;
   top: 50px;
+
+  @include respond-to(phone) {
+    width: auto;
+    overflow: initial;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+
+    .centered-crop-image {
+      position: static;
+      left: auto;
+      right: auto;
+      top: auto;
+      bottom: auto;
+      margin: -50px -25px 50px -25px;
+      height: auto;
+      width: calc(100% + 50px);
+    }
+  }
 }
 
 .domain__block__arrow,
@@ -338,6 +457,11 @@
 .pro-event__contact__button,
 .gallery__contact__button {
   @extend .button-bordered;
+
+  @include respond-to(phone) {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
 }
 
 .private-event__contact,
@@ -351,6 +475,10 @@
   padding: 50px;
   width: 80%;
   margin: 50px auto 100px auto;
+
+  @include respond-to(phone) {
+    width: 90%;
+  }
 }
 
 .private-event__contact__title,
@@ -365,6 +493,10 @@
 .gallery__contact__text {
   margin: 20px 0;
   text-align: center;
+
+  br {
+    display: none;
+  }
 }
 
 .pro-event__block--centered {

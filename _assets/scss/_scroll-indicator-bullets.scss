@@ -6,6 +6,10 @@
   &.fixed {
     position: fixed;
   }
+
+  @include respond-to(phone) {
+    display: none;
+  }
 }
 
 .scroll-indicator-bullets__link {

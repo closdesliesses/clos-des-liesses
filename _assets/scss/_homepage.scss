@@ -218,6 +218,10 @@
 
 .homepage__block__button {
   @extend .button-bordered;
+
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
 }
 
 .homepage__block__image {

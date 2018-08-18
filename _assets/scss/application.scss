@@ -68,6 +68,16 @@ button::-moz-focus-inner {
   box-sizing: border-box;
 }
 
+img,
+input,
+textarea,
+button,
+select,
+a {
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .centered-content {
   left: 50%;
   position: absolute;

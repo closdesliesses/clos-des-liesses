@@ -13,9 +13,13 @@
 
 .gallery__navigation {
   display: flex;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   justify-content: center;
+
+  @include respond-to(phone) {
+    flex-wrap: wrap;
+  }
 
   .navigation__tab {
     text-align: center;
@@ -27,6 +31,12 @@
     cursor: pointer;
     letter-spacing: 2px;
     font-size: 14px;
+
+    @include respond-to(phone) {
+      margin: 0 15px 5px 15px;
+      font-size: 12px;
+      padding: 7px 0;
+    }
 
     &.navigation__tab--selected {
       border-bottom: 6px solid #eed499;
@@ -48,6 +58,10 @@
 
 .swiper-wrapper {
   height: 600px!important;
+
+  @include respond-to(phone) {
+    height: 240px !important;
+  }
 }
 
 .swiper-slide {
@@ -56,7 +70,7 @@
   background-color: black;
 
   // margin-right: 5%!important;
-  width: 80%!important;
+  width: 90%!important;
 }
 
 .swiper-slide-next,
@@ -72,24 +86,43 @@
 .swiper-button-prev,
 .swiper-button-next {
   top: 324px!important;
+
+  @include respond-to(phone) {
+    top: 135px!important;
+    width: 15px!important;
+    height: 28px!important;
+    background-size: 15px 28px!important;
+  }
 }
 
 .swiper-button-next {
   background-image: url("../images/next.png")!important;
   right: calc(11.5% - 75px) !important;
+
+  @include respond-to(phone) {
+    right: calc(0% + 2px) !important;
+  }
 }
 
 .swiper-button-prev {
   background-image: url("../images/prev.png")!important;
   left: calc(11.5% - 75px) !important;
+
+  @include respond-to(phone) {
+    left: calc(0% + 2px) !important;
+  }
 }
 
 .swiper-pagination {
   position: static!important;
-  width: calc(80% + 10px)!important;
+  width: calc(90% + 5px)!important;
   margin: 50px auto!important;
   display: flex!important;
   flex-wrap: wrap!important;
+
+  @include respond-to(phone) {
+    margin: 20px auto!important;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -101,6 +134,11 @@
   // flex: 1;
   margin: 3px!important;
   width: calc(11.08% - 6px) !important;
+
+  @include respond-to(phone) {
+    height: 80px!important;
+    width: calc(25% - 6px) !important;
+  }
 
   &.swiper-pagination-bullet-active {
     opacity: 0.4!important;

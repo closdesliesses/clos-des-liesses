@@ -18,6 +18,10 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  @include respond-to(phone) {
+    padding: 50px 25px;
+  }
 }
 
 .footer__banner-quote-text {
@@ -26,6 +30,10 @@ footer {
   font-size: 30px;
   font-family: 'FreightTextProMedium-Regular';
   letter-spacing: 1px;
+
+  @include respond-to(phone) {
+    text-align: center;
+  }
 
   span {
     font-family: 'FreightTextProMedium-Italic';
@@ -37,22 +45,51 @@ footer {
   display: flex;
   width: 100%;
   padding: 100px 20px;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    padding: 70px 25px;
+  }
 }
 
 .footer__block {
   width: 33.33%;
   padding: 0 60px;
 
+  @include respond-to(phone) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
   &:first-child {
     padding-right: 40px;
+
+    @include respond-to(phone) {
+      order: 2;
+      padding-right: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &:nth-child(2) {
     padding-left: 20px;
+
+    @include respond-to(phone) {
+      order: 1;
+      padding-left: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &:last-child {
     border-left: 1px solid rgba(255,255,255,.2);
+
+    @include respond-to(phone) {
+      order: 3;
+      border-left: none;
+    }
   }
 }
 
@@ -64,12 +101,20 @@ footer {
   font-size: 12.5px;
   letter-spacing: 2px;
   font-weight: 100;
+
+  @include respond-to(phone) {
+    margin-top: 20px;
+  }
 }
 
 .footer__logo {
   width: 300px;
   height: auto;
   margin-bottom: 30px;
+
+  @include respond-to(phone) {
+    margin-bottom: 20px;
+  }
 }
 
 .footer__image {
@@ -99,6 +144,10 @@ footer {
   height: 100px;
   width: auto;
   margin-right: 30px;
+
+  @include respond-to(phone) {
+    height: 80px;
+  }
 }
 
 .footer__button {
@@ -110,6 +159,10 @@ footer {
   font-size: 14px;
   border: 3px solid white;
   margin-top: 90px;
+
+  @include respond-to(phone) {
+    margin-top: 35px;
+  }
 
   &:hover {
     cursor: pointer;
@@ -124,12 +177,40 @@ footer {
   padding: 30px 0;
   margin: 0 70px;
   border-top: 1px solid rgba(255,255,255,.2);
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    width: calc(100% - 50px);
+  }
+
+  .footer__legal-mentions {
+    @include respond-to(phone) {
+      order: 3;
+    }
+  }
+  .footer__social-icons {
+    @include respond-to(phone) {
+      order: 1;
+      margin-bottom: 30px;
+    }
+  }
+  .footer__address {
+    @include respond-to(phone) {
+      order: 2;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
 }
 
 .footer__legal-mentions,
 .footer__address,
 .footer__social-icons {
   flex: 1 1 0;
+
+  @include respond-to(phone) {
+    flex: none;
+  }
 }
 
 .footer__legal-mentions,
