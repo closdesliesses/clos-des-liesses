@@ -1990,6 +1990,9 @@ footer {
   height: 427px;
   position: relative;
   overflow: hidden; }
+  .footer__image .centered-crop-image {
+    min-height: 100%;
+    min-width: 1px; }
 
 .footer__text-reco {
   color: rgba(255, 255, 255, 0.5);

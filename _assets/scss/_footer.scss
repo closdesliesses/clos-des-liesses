@@ -122,6 +122,11 @@ footer {
   height: 427px;
   position: relative;
   overflow: hidden;
+
+  .centered-crop-image {
+    min-height: 100%;
+    min-width: 1px;
+  }
 }
 
 .footer__text-reco {
