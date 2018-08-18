@@ -13,6 +13,10 @@
     outline: none !important;
     border: 1px solid #EED59A;
   }
+
+  @include respond-to(phone) {
+    width: 90%;
+  }
 }
 
 .contact__title {
@@ -26,6 +30,10 @@
 
 .contact__tabs {
   display: flex;
+
+  @include respond-to(phone) {
+    display: none;
+  }
 }
 
 .contact__tab {
@@ -38,6 +46,10 @@
   position: relative;
   align-items: center;
   flex-direction: column;
+
+  @include respond-to(phone) {
+    padding: 30px 15px;
+  }
 
   &:last-child {
     margin-left: 15px;
@@ -59,6 +71,24 @@
       height: 30px;
       position: absolute;
       background-color: #fdf9ea;
+
+      @include respond-to(phone) {
+        height: 20px;
+      }
+    }
+  }
+
+  &.mobile {
+    display: none;
+    margin-right: 0;
+    margin-bottom: 20px;
+
+    @include respond-to(phone) {
+      display: flex;
+
+      &.active {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -70,11 +100,19 @@
   font-size: 26px;
   color: #616161;
   text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 20px;
+  }
 }
 
 .contact__tab__button,
 .contact-form__button {
   @extend .button-bordered;
+
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
 }
 
 .contact__tab__description {
@@ -82,6 +120,14 @@
   display: none;
   font-size: 15px;
   text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 14px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 #contact__private-block,
@@ -98,6 +144,12 @@
   padding: 40px;
   background-color: #fdf9ea;
   margin-top: 30px;
+
+  @include respond-to(phone) {
+    margin-top: 0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .contact-form {
@@ -115,6 +167,10 @@
   font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 15px;
+
+  @include respond-to(phone) {
+    font-size: 12.5px;
+  }
 }
 
 .contact-form__row {
@@ -125,12 +181,22 @@
   &.contact-form__row--max-width {
     max-width: 640px;
   }
+
+  &.radio {
+    @include respond-to(phone) {
+      flex-direction: column;
+    }
+  }
 }
 
 .contact-form__label {
   font-size: 14px;
   line-height: 30px;
   width: 200px;
+
+  @include respond-to(phone) {
+    width: 100%;
+  }
 }
 
 .contact-form__radio-label {
@@ -140,6 +206,10 @@
 
   &.margin-bottom {
     margin-bottom: 10px;
+
+    @include respond-to(phone) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -164,6 +234,10 @@
 
 .contact__text-container {
   margin: 70px 0;
+
+  @include respond-to(phone) {
+    margin: 40px 0;
+  }
 }
 
 .contact__text-block {
@@ -179,6 +253,16 @@
 
 .contact__map {
   margin-bottom: 80px;
+
+  @include respond-to(phone) {
+    margin-bottom: 40px;
+
+    .mapouter,
+    .gmap_canvas,
+    iframe {
+      height: 300px;
+    }
+  }
 }
 
 // Input number

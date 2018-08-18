@@ -25,6 +25,15 @@
         </div>
       </div>
 
+      <!-- mobile -->
+      <div class="contact__tab contact__tab--private mobile">
+        <h2 class="contact__tab__title">Votre évènement privé</h2>
+        <button class="contact__tab__button">Formulaire de contact</button>
+        <p class="contact__tab__description">Pour obtenir plus d’informations sur le domaine<br>
+          nous vous invitons à compléter ce formulaire :</p>
+      </div>
+      <!-- end mobile -->
+
       <!-- Private form -->
       <div class="contact__form-container" id="contact__private-block">
         <form class="contact-form" method="POST" action="https://formspree.io/tiffany.vachez@outlook.com">
@@ -32,7 +41,7 @@
           <div class="contact-form__category">
             <h3 class="contact-form__title">Type d'évènement*</h3>
             <input type="hidden" name="TYPE D'ÉVÈNEMENT :" value=""/>
-            <div class="contact-form__row">
+            <div class="contact-form__row radio">
               <input type="radio" id="typeChoice1" name="Type" value="Mariage" required>
               <label class="contact-form__radio-label" for="typeChoice1">Mariage</label>
               <input type="radio" id="typeChoice2" name="Type" value="Anniversaire" required>
@@ -107,7 +116,7 @@
           <div class="contact-form__category">
             <h3 class="contact-form__title">Comment avez-vous connu notre domaine ?*</h3>
             <input type="hidden" name="CONNAISSANCE DU DOMAINE :" value=""/>
-            <div class="contact-form__row">
+            <div class="contact-form__row radio">
               <input type="radio" id="choice1" name="Choix" value="Recherche internet">
               <label class="contact-form__radio-label margin-bottom" for="choice1">Recherche internet</label>
               <input type="radio" id="choice2" name="Choix" value="Mariage.net" required>
@@ -133,6 +142,15 @@
         </form>
       </div>
 
+      <!-- mobile -->
+      <div class="contact__tab contact__tab--pro mobile">
+        <h2 class="contact__tab__title">Votre évènement professionnel</h2>
+        <button class="contact__tab__button">Formulaire de contact</button>
+        <p class="contact__tab__description">Pour obtenir un devis personnalisé,<br>
+          nous vous invitons à compléter ce formulaire :</p>
+      </div>
+      <!-- end mobile -->
+
       <!-- Pro form -->
       <div class="contact__form-container" id="contact__pro-block">
         <form class="contact-form" method="POST" action="https://formspree.io/tiffany.vachez@outlook.com">
@@ -140,7 +158,7 @@
           <div class="contact-form__category">
             <h3 class="contact-form__title">Vous êtes*</h3>
             <input type="hidden" name="VOUS ÊTES :" value=""/>
-            <div class="contact-form__row contact-form__row--max-width">
+            <div class="contact-form__row contact-form__row--max-width radio">
               <input type="radio" id="proType1" name="Choix pro" value="Une société">
               <label class="contact-form__radio-label margin-bottom" for="proType1">Une société</label>
               <input type="radio" id="proType2" name="Choix pro" value="Une agence événementielle" required>
@@ -215,7 +233,7 @@
           <div class="contact-form__category">
             <h3 class="contact-form__title">Comment avez-vous connu notre domaine ?*</h3>
             <input type="hidden" name="CONNAISSANCE DU DOMAINE :" value=""/>
-            <div class="contact-form__row">
+            <div class="contact-form__row radio">
               <input type="radio" id="proChoice1" name="Choix" value="Recherche internet">
               <label class="contact-form__radio-label margin-bottom" for="proChoice1">Recherche internet</label>
               <input type="radio" id="proChoice2" name="Choix" value="Mariage.net" required>

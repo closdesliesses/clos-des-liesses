@@ -940,6 +940,9 @@ button::-moz-focus-inner {
   #contact textarea:focus {
     outline: none !important;
     border: 1px solid #EED59A; }
+  @media screen and (max-width: 768px) {
+    #contact {
+      width: 90%; } }
 
 .contact__title {
   color: #404040;
@@ -953,6 +956,9 @@ button::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .contact__tabs {
+      display: none; } }
 
 .contact__tab {
   padding: 50px 20px;
@@ -975,6 +981,9 @@ button::-moz-focus-inner {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .contact__tab {
+      padding: 30px 15px; } }
   .contact__tab:last-child {
     margin-left: 15px;
     margin-right: 0; }
@@ -990,6 +999,20 @@ button::-moz-focus-inner {
     height: 30px;
     position: absolute;
     background-color: #fdf9ea; }
+    @media screen and (max-width: 768px) {
+      .contact__tab.active::after {
+        height: 20px; } }
+  .contact__tab.mobile {
+    display: none;
+    margin-right: 0;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .contact__tab.mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .contact__tab.mobile.active {
+          margin-bottom: 0; } }
 
 .contact__tab__title {
   font-family: 'FreightTextProMedium-Regular';
@@ -998,12 +1021,25 @@ button::-moz-focus-inner {
   font-size: 26px;
   color: #616161;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .contact__tab__title {
+      font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .contact__tab__button,
+  .contact-form__button {
+    font-size: 12px; } }
 
 .contact__tab__description {
   color: #616161;
   display: none;
   font-size: 15px;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .contact__tab__description {
+      font-size: 14px; }
+      .contact__tab__description br {
+        display: none; } }
 
 #contact__private-block,
 #contact__pro-block {
@@ -1017,6 +1053,11 @@ button::-moz-focus-inner {
   padding: 40px;
   background-color: #fdf9ea;
   margin-top: 30px; }
+  @media screen and (max-width: 768px) {
+    .contact__form-container {
+      margin-top: 0;
+      padding: 20px;
+      margin-bottom: 20px; } }
 
 .contact-form {
   display: -webkit-box;
@@ -1038,6 +1079,9 @@ button::-moz-focus-inner {
   font-size: 14px;
   letter-spacing: 1px;
   margin-bottom: 15px; }
+  @media screen and (max-width: 768px) {
+    .contact-form__title {
+      font-size: 12.5px; } }
 
 .contact-form__row {
   display: -webkit-box;
@@ -1048,11 +1092,20 @@ button::-moz-focus-inner {
   margin-bottom: 10px; }
   .contact-form__row.contact-form__row--max-width {
     max-width: 640px; }
+  @media screen and (max-width: 768px) {
+    .contact-form__row.radio {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .contact-form__label {
   font-size: 14px;
   line-height: 30px;
   width: 200px; }
+  @media screen and (max-width: 768px) {
+    .contact-form__label {
+      width: 100%; } }
 
 .contact-form__radio-label {
   font-size: 14px;
@@ -1060,6 +1113,9 @@ button::-moz-focus-inner {
   margin-right: 30px; }
   .contact-form__radio-label.margin-bottom {
     margin-bottom: 10px; }
+    @media screen and (max-width: 768px) {
+      .contact-form__radio-label.margin-bottom {
+        margin-bottom: 0; } }
 
 .contact-form__input-text,
 .contact-form__textarea {
@@ -1079,6 +1135,9 @@ button::-moz-focus-inner {
 
 .contact__text-container {
   margin: 70px 0; }
+  @media screen and (max-width: 768px) {
+    .contact__text-container {
+      margin: 40px 0; } }
 
 .contact__text-block {
   text-align: center;
@@ -1090,6 +1149,13 @@ button::-moz-focus-inner {
 
 .contact__map {
   margin-bottom: 80px; }
+  @media screen and (max-width: 768px) {
+    .contact__map {
+      margin-bottom: 40px; }
+      .contact__map .mapouter,
+      .contact__map .gmap_canvas,
+      .contact__map iframe {
+        height: 300px; } }
 
 .contact-form__input-number {
   width: 50px;
