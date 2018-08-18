@@ -11,16 +11,21 @@
       <h1 class="contact__title">Contact</h1>
 
       <div class="contact__tabs">
-        <div class="contact__tab">
+        <div class="contact__tab contact__tab--private">
           <h2 class="contact__tab__title">Votre évènement privé</h2>
           <button class="contact__tab__button">Formulaire de contact</button>
+          <p class="contact__tab__description">Pour obtenir plus d’informations sur le domaine<br>
+            nous vous invitons à compléter ce formulaire :</p>
         </div>
-        <div class="contact__tab">
+        <div class="contact__tab contact__tab--pro">
           <h2 class="contact__tab__title">Votre évènement professionnel</h2>
           <button class="contact__tab__button">Formulaire de contact</button>
+          <p class="contact__tab__description">Pour obtenir un devis personnalisé,<br>
+            nous vous invitons à compléter ce formulaire :</p>
         </div>
       </div>
 
+      <!-- Private form -->
       <div class="contact__form-container" id="contact__private-block">
         <form class="contact-form" method="POST" action="https://formspree.io/tiffany.vachez@outlook.com">
 
@@ -44,13 +49,13 @@
             <div class="contact-form__row">
               <p class="contact-form__label">Nombre d'adultes*</p>
               <span class="contact-form__input-number-decrement" onclick="decrement('adultes')">–</span>
-              <input class="contact-form__input-number" type="text" name="Nombre d'adultes" id="adultes" value="1" min="1" required>
+              <input class="contact-form__input-number" type="text" name="Nombre d'adultes" id="adultes" value="1" min="1" autocomplete="off" required>
               <span class="contact-form__input-number-increment" onclick="increment('adultes')">+</span>
             </div>
             <div class="contact-form__row">
               <p class="contact-form__label">Nombre d'enfants</p>
               <span class="contact-form__input-number-decrement" onclick="decrement('enfants')">–</span>
-              <input class="contact-form__input-number" type="text" name="Nombre d'enfants" id="enfants" value="0" min="0">
+              <input class="contact-form__input-number" type="text" name="Nombre d'enfants" id="enfants" value="0" min="0" autocomplete="off">
               <span class="contact-form__input-number-increment" onclick="increment('enfants')">+</span>
             </div>
             <div class="contact-form__row">
@@ -122,6 +127,131 @@
               <input class="contact-form__input-text" type="text" name="Autre" placeholder="précisez">
             </div>
           </div>
+
+          <button class="contact-form__button" type="submit">Envoyer</button>
+
+        </form>
+      </div>
+
+      <!-- Pro form -->
+      <div class="contact__form-container" id="contact__pro-block">
+        <form class="contact-form" method="POST" action="https://formspree.io/tiffany.vachez@outlook.com">
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Vous êtes*</h3>
+            <input type="hidden" name="VOUS ÊTES :" value=""/>
+            <div class="contact-form__row contact-form__row--max-width">
+              <input type="radio" id="proType1" name="Choix pro" value="Une société">
+              <label class="contact-form__radio-label margin-bottom" for="proType1">Une société</label>
+              <input type="radio" id="proType2" name="Choix pro" value="Une agence événementielle" required>
+              <label class="contact-form__radio-label margin-bottom" for="proType2">Une agence événementielle</label>
+              <input type="radio" id="proType3" name="Choix pro" value="Une association" required>
+              <label class="contact-form__radio-label margin-bottom" for="proType3">Une association</label>
+              <input type="radio" id="proType4" name="Choix pro" value="Un comité d’entreprise" required>
+              <label class="contact-form__radio-label margin-bottom" for="proType4">Un comité d’entreprise</label>
+              <input type="radio" id="proType5" name="Choix pro" value="Un particulier" required>
+              <label class="contact-form__radio-label margin-bottom" for="proType5">Un particulier</label>
+              <input type="radio" id="proType6" name="Choix pro" value="Autre" required>
+              <label class="contact-form__radio-label margin-bottom" for="proType6">Autre :</label>
+              <input class="contact-form__input-text" type="text" name="Autre pro" placeholder="précisez">
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Coordonnées</h3>
+            <input type="hidden" name="COORDONNEES :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Nom*</p>
+              <input class="contact-form__input-text" type="text" name="Nom pro" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Adresse*</p>
+              <input class="contact-form__input-text" type="text" name="Adresse" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Code postal*</p>
+              <input class="contact-form__input-text small" type="text" name="Code postal" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Ville*</p>
+              <input class="contact-form__input-text" type="text" name="Ville" autocomplete="off" required/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Pays*</p>
+              <input class="contact-form__input-text" type="text" name="Pays" autocomplete="off" required/>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Divers</h3>
+            <input type="hidden" name="INVITÉS :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Nombre de personnes*</p>
+              <span class="contact-form__input-number-decrement" onclick="decrement('people')">–</span>
+              <input class="contact-form__input-number" type="text" name="Nombre de personnes" id="people" value="1" min="1" autocomplete="new-password" required>
+              <span class="contact-form__input-number-increment" onclick="increment('people')">+</span>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Autre information</p>
+              <textarea class="contact-form__textarea" name="Autre information" placeholder="votre demande en quelques mots..." autocomplete="off"></textarea>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Dates</h3>
+            <input type="hidden" name="DATES :" value=""/>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Date d'arrivée*</p>
+              <img class="contact-form__input-icon" id="image-date-1" src="{{ site.baseurl }}/assets/images/icons/calendar.png" alt="calendar-icon">
+              <input class="contact-form__input-date" id="input-date-start" type="text" name="date d'arrivée" placeholder="JJ/MM/AAAA" autocomplete="off" readonly/>
+            </div>
+            <div class="contact-form__row">
+              <p class="contact-form__label">Date de départ*</p>
+              <img class="contact-form__input-icon" id="image-date-2" src="{{ site.baseurl }}/assets/images/icons/calendar.png" alt="calendar-icon">
+              <input class="contact-form__input-date" id="input-date-end" type="text" name="date de départ" placeholder="JJ/MM/AAAA" autocomplete="off" readonly/>
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+            <h3 class="contact-form__title">Comment avez-vous connu notre domaine ?*</h3>
+            <input type="hidden" name="CONNAISSANCE DU DOMAINE :" value=""/>
+            <div class="contact-form__row">
+              <input type="radio" id="proChoice1" name="Choix" value="Recherche internet">
+              <label class="contact-form__radio-label margin-bottom" for="proChoice1">Recherche internet</label>
+              <input type="radio" id="proChoice2" name="Choix" value="Mariage.net" required>
+              <label class="contact-form__radio-label margin-bottom" for="proChoice2">Mariage.net</label>
+              <input type="radio" id="proChoice3" name="Choix" value="Bouche à oreille" required>
+              <label class="contact-form__radio-label margin-bottom" for="proChoice3">Bouche à oreille</label>
+              <input type="radio" id="proChoice4" name="Choix" value="Partenaire du Domaine" required>
+              <label class="contact-form__radio-label margin-bottom" for="proChoice4">Partenaire du Domaine</label>
+              <input type="radio" id="proChoice5" name="Choix" value="Lors d'un mariage" required>
+              <label class="contact-form__radio-label margin-bottom" for="proChoice5">Lors d'un mariage</label>
+              <input type="radio" id="proChoice6" name="Choix" value="Autre" required>
+              <label class="contact-form__radio-label margin-bottom" for="proChoice6">Autre :</label>
+              <input class="contact-form__input-text" type="text" name="Autre" placeholder="précisez">
+            </div>
+          </div>
+
+          <div class="contact-form__category">
+              <h3 class="contact-form__title">Personne à contacter</h3>
+              <input type="hidden" name="PERSONNE À CONTACTER :" value=""/>
+              <div class="contact-form__row">
+                <p class="contact-form__label">Nom*</p>
+                <input class="contact-form__input-text" type="text" name="Nom" autocomplete="off" required/>
+              </div>
+              <div class="contact-form__row">
+                <p class="contact-form__label">Prénom*</p>
+                <input class="contact-form__input-text" type="text" name="Prénom" autocomplete="off" required/>
+              </div>
+              <div class="contact-form__row">
+                <p class="contact-form__label">Email*</p>
+                <input class="contact-form__input-text" type="email" name="Email" autocomplete="off" required/>
+              </div>
+              <div class="contact-form__row">
+                <p class="contact-form__label">Téléphone*</p>
+                <input class="contact-form__input-text" type="phone" name="Téléphone" autocomplete="off" required/>
+              </div>
+            </div>
 
           <button class="contact-form__button" type="submit">Envoyer</button>
 
