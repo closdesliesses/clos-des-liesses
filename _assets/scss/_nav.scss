@@ -33,6 +33,9 @@
   @include respond-to(phone) {
     display: none;
   }
+  @include respond-to(tablet) {
+    display: none;
+  }
 }
 
 #desktop-nav__logo {
@@ -108,6 +111,9 @@ nav#phone-nav {
   }
 
   @include respond-to(phone) {
+    display: flex;
+  }
+  @include respond-to(tablet) {
     display: flex;
   }
 }

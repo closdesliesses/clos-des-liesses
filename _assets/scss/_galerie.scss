@@ -68,9 +68,11 @@
   background-size: cover;
   background-position: center;
   background-color: black;
+  width: 80%!important;
 
-  // margin-right: 5%!important;
-  width: 90%!important;
+  @include respond-to(phone) {
+    width: 90%!important;
+  }
 }
 
 .swiper-slide-next,
@@ -115,13 +117,14 @@
 
 .swiper-pagination {
   position: static!important;
-  width: calc(90% + 5px)!important;
+  width: calc(80% + 5px)!important;
   margin: 50px auto!important;
   display: flex!important;
   flex-wrap: wrap!important;
 
   @include respond-to(phone) {
     margin: 20px auto!important;
+    width: calc(90% + 5px)!important;
   }
 }
 
