@@ -17,7 +17,7 @@
     img {
       filter: invert(100%);
     }
-    li {
+    li a {
       color: #404040;
     }
     .desktop-nav__item.desktop-nav__item--contact {
@@ -52,6 +52,15 @@
   margin: 0 15px;
   display: flex;
   align-items: center;
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  a {
+    color: white;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -60,14 +69,6 @@
   &.desktop-nav__item--contact {
     border: 2px solid white;
     padding: 12px 15px;
-  }
-
-  li {
-    list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px;
   }
 }
 

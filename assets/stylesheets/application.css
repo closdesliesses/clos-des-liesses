@@ -104,6 +104,13 @@ a {
   text-transform: uppercase;
   -webkit-transition: background-color .5s;
   transition: background-color .5s; }
+  .button-bordered a, .homepage__block__button a, .private-event__block__button a,
+  .pro-event__block__button a,
+  .private-event__contact__button a,
+  .pro-event__contact__button a,
+  .gallery__contact__button a, .contact__tab__button a,
+  .contact-form__button a {
+    color: white; }
   .button-bordered:hover, .homepage__block__button:hover, .private-event__block__button:hover,
   .pro-event__block__button:hover,
   .private-event__contact__button:hover,
@@ -1690,7 +1697,7 @@ input[type="checkbox"] {
     #desktop-nav.fixed img, #desktop-nav.black img {
       -webkit-filter: invert(100%);
               filter: invert(100%); }
-    #desktop-nav.fixed li, #desktop-nav.black li {
+    #desktop-nav.fixed li a, #desktop-nav.black li a {
       color: #404040; }
     #desktop-nav.fixed .desktop-nav__item.desktop-nav__item--contact, #desktop-nav.black .desktop-nav__item.desktop-nav__item--contact {
       border: 2px solid #404040; }
@@ -1721,18 +1728,19 @@ input[type="checkbox"] {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  list-style-type: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px; }
+  .desktop-nav__item a {
+    color: white; }
   .desktop-nav__item:last-child {
     margin-right: 0; }
   .desktop-nav__item.desktop-nav__item--contact {
     border: 2px solid white;
     padding: 12px 15px; }
-  .desktop-nav__item li {
-    list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 2px; }
 
 nav#phone-nav {
   display: none;

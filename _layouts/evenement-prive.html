@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
   {% include head.html %}
 
@@ -207,9 +207,11 @@
               prolongera jusque dans l'après-midi.
             </p>
           </div>
-          <a href="{{ site.baseurl }}/evenement-prive">
-            <button class="private-event__block__button">Organiser votre journée de rêve</button>
-          </a>
+
+          <button class="private-event__block__button">
+            <a href="{{ site.baseurl }}/evenement-prive">Organiser votre journée de rêve</a>
+          </button>
+
         </div>
         <div class="private-event__block__image">
           <img class="centered-crop-image" src="{{ site.baseurl}}/assets/images/03_CDL_EventPrive_image_10.jpg" alt="" data-aos="fade-left">
@@ -222,9 +224,9 @@
           Pour obtenir plus d'informations sur le domaine (dates disponibles, tarifs, ...)<br>
           en vue de votre mariage, nous vous invitons à compléter le formulaire de contact :
         </p>
-        <a href="{{ site.baseurl }}/contact">
-          <button class="private-event__contact__button">Formulaire de contact</button>
-        </a>
+        <button class="private-event__block__button">
+          <a href="{{ site.baseurl }}/contact">Formulaire de contact</a>
+        </button>
       </div>
 
     </div>
@@ -235,7 +237,7 @@
 
     {% include script.html %}
 
-    <script src="{{ site.baseurl }}/assets/js/private-event.js?v=0.1" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/assets/js/private-event.js?v=0.1"></script>
 
   </body>
 
