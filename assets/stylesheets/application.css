@@ -104,13 +104,6 @@ a {
   text-transform: uppercase;
   -webkit-transition: background-color .5s;
   transition: background-color .5s; }
-  .button-bordered a, .homepage__block__button a, .private-event__block__button a,
-  .pro-event__block__button a,
-  .private-event__contact__button a,
-  .pro-event__contact__button a,
-  .gallery__contact__button a, .contact__tab__button a,
-  .contact-form__button a {
-    color: white; }
   .button-bordered:hover, .homepage__block__button:hover, .private-event__block__button:hover,
   .pro-event__block__button:hover,
   .private-event__contact__button:hover,
@@ -125,6 +118,14 @@ a {
   .gallery__contact__button:focus, .contact__tab__button:focus,
   .contact-form__button:focus {
     outline: 0 !important; }
+
+a.button-bordered, a.homepage__block__button, a.private-event__block__button,
+a.pro-event__block__button,
+a.private-event__contact__button,
+a.pro-event__contact__button,
+a.gallery__contact__button, a.contact__tab__button,
+a.contact-form__button {
+  color: white; }
 
 .blur {
   -webkit-filter: blur(5px);

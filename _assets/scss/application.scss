@@ -106,10 +106,6 @@ a {
   text-transform: uppercase;
   transition: background-color .5s;
 
-  a {
-    color: white;
-  }
-
   &:hover {
     background-color: #B29689;
   }
@@ -117,6 +113,10 @@ a {
   &:focus {
     outline: 0 !important;
   }
+}
+
+a.button-bordered {
+  color: white;
 }
 
 .blur {
