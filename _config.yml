@@ -17,3 +17,7 @@ gems:
 title: Domaine du Clos des Liesses
 description: description
 authors: Tiffany Vachez
+
+headers:
+  Cache-Control: max-age=86400
+
