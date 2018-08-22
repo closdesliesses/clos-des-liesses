@@ -2,10 +2,11 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/utils.js?v=0.1"></script>
 <script src="https://unpkg.com/aos/dist/aos.js"></script>
-<script src="https://use.fontawesome.com/7729d5c7ef.js"></script>
 
-<!-- Asynch CSS -->
-<noscript id="deferred-styles">
+<!-- Asynch scripts -->
+<noscript id="deferred-scripts">
+  <script src="https://use.fontawesome.com/7729d5c7ef.js"></script>
+
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/stylesheets/application.css?v=0.1"/>
   <link href="https://unpkg.com/aos/dist/aos.css" rel="stylesheet">
   <link href="https://unpkg.com/js-datepicker/datepicker.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 
 <script>
   var loadDeferredStyles = function() {
-    var addStylesNode = document.getElementById("deferred-styles");
+    var addStylesNode = document.getElementById("deferred-scripts");
     var replacement = document.createElement("div");
     replacement.innerHTML = addStylesNode.textContent;
     document.body.appendChild(replacement)
