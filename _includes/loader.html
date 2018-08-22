@@ -1,0 +1,32 @@
+<style>
+  #loader {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 1.5s;
+    width: 100%;
+    z-index: 9999;
+  }
+  #loader img {
+    width: 40%;
+  }
+</style>
+
+<div id="loader">
+  <img class="logo" src="{{ site.baseurl }}/assets/images/loader.png" alt="logo-clos-des-liesses">
+</div>
+
+<script>
+  window.onload = function() {
+    document.getElementById('loader').style.opacity = '0';
+    setTimeout(function() {
+      document.getElementById('loader').style.display = 'none';
+    }, 1500);
+  };
+</script>

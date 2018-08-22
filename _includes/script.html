@@ -2,3 +2,30 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/utils.js?v=0.1"></script>
 <script src="https://unpkg.com/aos/dist/aos.js"></script>
+<script src="https://use.fontawesome.com/7729d5c7ef.js"></script>
+
+<!-- Asynch CSS -->
+<noscript id="deferred-styles">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/stylesheets/application.css?v=0.1"/>
+  <link href="https://unpkg.com/aos/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/js-datepicker/datepicker.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/stylesheets/swiper.min.css" rel="stylesheet" type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+  <link href="{{ site.baseurl }}/assets/stylesheets/FreightText.css" rel="stylesheet" type="text/css">
+</noscript>
+
+<script>
+  var loadDeferredStyles = function() {
+    var addStylesNode = document.getElementById("deferred-styles");
+    var replacement = document.createElement("div");
+    replacement.innerHTML = addStylesNode.textContent;
+    document.body.appendChild(replacement)
+    addStylesNode.parentElement.removeChild(addStylesNode);
+  };
+  var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+      window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+  else window.addEventListener('load', loadDeferredStyles);
+</script>
