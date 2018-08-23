@@ -1,7 +1,7 @@
 <!-- <script src="{{ site.baseurl }}/assets/js/application.min.js?v=0" type="text/javascript"></script> -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="{{ site.baseurl }}/assets/js/utils.js?v=0.1"></script>
 <script src="https://unpkg.com/aos/dist/aos.js"></script>
+<script src="{{ site.baseurl }}/assets/js/utils.js?v=0.1"></script>
 
 <!-- Asynch scripts -->
 <noscript id="deferred-scripts">
@@ -18,7 +18,7 @@
 </noscript>
 
 <script>
-  var loadDeferredStyles = function() {
+  var loadDeferredScripts = function() {
     var addStylesNode = document.getElementById("deferred-scripts");
     var replacement = document.createElement("div");
     replacement.innerHTML = addStylesNode.textContent;
@@ -27,6 +27,6 @@
   };
   var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
       window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-  if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-  else window.addEventListener('load', loadDeferredStyles);
+  if (raf) raf(function() { window.setTimeout(loadDeferredScripts, 0); });
+  else window.addEventListener('load', loadDeferredScripts);
 </script>
