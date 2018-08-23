@@ -2,6 +2,7 @@ const gulp         = require('gulp');
 const sass         = require('gulp-sass');
 const postcss      = require('gulp-postcss');
 const cleancss     = require('gulp-clean-css');
+const concatcss    = require('gulp-concat-css');
 const autoprefixer = require('autoprefixer');
 const del          = require('del');
 const imagemin     = require('gulp-imagemin');
@@ -79,6 +80,7 @@ gulp.task('sass', () => {
       }
     ).on('error', sass.logError))
     .pipe(postcss())
+    .pipe(cleancss())
     .pipe(gulp.dest(paths.stylesheets));
 });
 
