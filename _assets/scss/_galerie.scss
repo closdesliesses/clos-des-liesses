@@ -1,5 +1,9 @@
 #gallery {
-  margin-top: 115px;
+  margin-top: 150px;
+
+  @include respond-to(phone) {
+    margin-top: 100px;
+  }
 }
 
 .gallery__title {

@@ -29,6 +29,7 @@
   text-align: center;
 
   @include respond-to(phone) {
+    font-size: 40px;
     padding: 40px 0;
   }
 }

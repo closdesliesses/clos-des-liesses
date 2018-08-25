@@ -132,3 +132,11 @@ a.button-bordered {
 @import "_scroll-indicator-bullets";
 @import "_nav";
 @import "_footer";
+
+@include respond-to(phone) {
+  [data-aos] {
+    transition: 0s !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

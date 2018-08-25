@@ -21,6 +21,10 @@
 .private-event__background-intro {
   background: url("../images/bg-private-event-intro.jpg") no-repeat center;
   background-size: cover;
+
+  @include respond-to(phone) {
+    background-position: 22%;
+  }
 }
 .pro-event__background-intro {
   background: url("../images/bg-pro-event-intro.jpg") no-repeat center;
