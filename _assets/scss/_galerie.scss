@@ -178,7 +178,7 @@
   .swiper-pagination-bullet {
     background-image: url("../images/cocktail/cocktail-1-min.jpg")!important;
 
-    @for $i from 1 to 10 {
+    @for $i from 1 to 13 {
       &:nth-child(#{$i}) {
         background-image: url("../images/cocktail/cocktail-#{$i}-min.jpg")!important;
       }
@@ -189,7 +189,7 @@
   .swiper-pagination-bullet {
     background-image: url("../images/diner/diner-1-min.jpg")!important;
 
-    @for $i from 1 to 25 {
+    @for $i from 1 to 10 {
       &:nth-child(#{$i}) {
         background-image: url("../images/diner/diner-#{$i}-min.jpg")!important;
       }
@@ -200,7 +200,7 @@
   .swiper-pagination-bullet {
     background-image: url("../images/hebergement/hebergement-1-min.jpg")!important;
 
-    @for $i from 1 to 22 {
+    @for $i from 1 to 10 {
       &:nth-child(#{$i}) {
         background-image: url("../images/hebergement/hebergement-#{$i}-min.jpg")!important;
       }
