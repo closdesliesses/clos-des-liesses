@@ -1,5 +1,5 @@
 #gallery {
-  margin-top: 150px;
+  margin-top: 50px;
 
   @include respond-to(phone) {
     margin-top: 100px;
@@ -10,9 +10,13 @@
   color: #404040;
   font-family: 'FreightTextProMedium-Italic';
   font-weight: 200;
-  font-size: 45px;
-  padding: 55px 0;
+  font-size: 30px;
+  padding-bottom: 55px;
   text-align: center;
+
+  @include respond-to(phone) {
+    display: none;
+  }
 }
 
 .gallery__navigation {
