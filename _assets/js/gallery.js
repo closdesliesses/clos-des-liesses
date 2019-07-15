@@ -11,7 +11,7 @@ $(document).ready(function () {
   var galleryDomain = new Swiper('#swiper-container--domain', {
     centeredSlides: true,
     loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -26,12 +26,13 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   var galleryCeremony = new Swiper('#swiper-container--ceremony', {
     centeredSlides: true,
     loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -46,12 +47,13 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   var galleryCocktail = new Swiper('#swiper-container--cocktail', {
     centeredSlides: true,
     loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -67,12 +69,13 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   var galleryDiner = new Swiper('#swiper-container--diner', {
     centeredSlides: true,
     loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -88,12 +91,13 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   var galleryHebergement = new Swiper('#swiper-container--hebergement', {
     centeredSlides: true,
     loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -109,12 +113,13 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   var galleryVideos = new Swiper('#swiper-container--videos', {
     centeredSlides: true,
     // loop: true,
-    lazyLoading: true,
+    lazy: true,
     autoplay: false,
     speed: 600,
     slidesPerView: 'auto',
@@ -130,6 +135,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    watchSlidesVisibility: true,
   });
 
   $("#swiper-container--cocktail, #swiper-container--ceremony, #swiper-container--diner, #swiper-container--hebergement, #swiper-container--videos").hide();
