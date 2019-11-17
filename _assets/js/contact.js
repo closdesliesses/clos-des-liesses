@@ -18,7 +18,7 @@ function decrement(elementId) {
 function initDatePicker() {
   var options = { year: 'numeric', month: 'numeric', day: 'numeric' };
 
-  picker1 = datepicker(document.querySelector('#input-date-1'), {
+  var picker1 = datepicker(document.querySelector('#input-date-1'), {
     position: 'br',
     startDay: 1,
     minDate: new Date(),
@@ -31,7 +31,7 @@ function initDatePicker() {
     overlayButton: 'Go!'
   });
 
-  picker2 = datepicker(document.querySelector('#input-date-2'), {
+  var picker2 = datepicker(document.querySelector('#input-date-2'), {
     position: 'br',
     startDay: 1,
     minDate: new Date(),
@@ -44,7 +44,7 @@ function initDatePicker() {
     overlayButton: 'Go!'
   });
 
-  pickerStart = datepicker(document.querySelector('#input-date-start'), {
+  var pickerStart = datepicker(document.querySelector('#input-date-start'), {
     position: 'br',
     startDay: 1,
     minDate: new Date(),
@@ -57,7 +57,7 @@ function initDatePicker() {
     overlayButton: 'Go!'
   });
 
-  pickerEnd = datepicker(document.querySelector('#input-date-end'), {
+  var pickerEnd = datepicker(document.querySelector('#input-date-end'), {
     position: 'br',
     startDay: 1,
     minDate: new Date(),
