@@ -1,5 +1,9 @@
 #homepage {
   position: relative;
+
+  .js-scrollTo {
+    margin-top: 70px;
+  }
 }
 
 .homepage__background-intro {
@@ -198,7 +202,7 @@
 
 .homepage__block__text-container {
   display: flex;
-  margin: 70px 0 50px 0;
+  margin: 50px 0 50px 0;
 
   @include respond-to(phone) {
     flex-direction: column;
