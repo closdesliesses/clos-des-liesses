@@ -1,0 +1,53 @@
+#legal-mentions {
+  margin: 120px auto;
+  width: 80%;
+
+  @include respond-to(phone) {
+    margin: 76px auto 0 auto;
+    width: 90%;
+  }
+}
+
+.legal-mentions__title {
+  color: #404040;
+  font-family: 'FreightTextProMedium-Italic';
+  font-weight: 200;
+  font-size: 45px;
+  padding: 55px 0;
+  text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 40px;
+    padding: 40px 0;
+  }
+}
+
+.legal-mentions__category {
+  margin: 50px 0;
+}
+
+.legal-mentions__category__title {
+  font-family: 'FreightTextProMedium-Regular';
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-size: 26px;
+
+  @include respond-to(phone) {
+    font-size: 20px;
+  }
+}
+
+.legal-mentions__category__paragraph {
+  color: #404040;
+  font-size: 16px;
+  margin: 15px 0;
+  text-align: justify;
+
+  @include respond-to(phone) {
+    font-size: 14px;
+
+    br {
+      display: none;
+    }
+  }
+}
