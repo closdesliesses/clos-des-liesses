@@ -2,5 +2,5 @@
 
 ## To run localy
 
-- `jekyll serve`
-- go to "localhost:8000"
+- run `jekyll serve`
+- go to "localhost:4000"
