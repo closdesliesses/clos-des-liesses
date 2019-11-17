@@ -2,5 +2,5 @@
 
 ## To run localy
 
-- run `jekyll serve`
-- go to "localhost:4000"
+- run `yarn`
+- run `yarn start`
