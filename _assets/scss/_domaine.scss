@@ -131,9 +131,10 @@
 
   &__see {
     color: #eed499;
+    font-size: 18px;
     position: absolute;
     right: 60px;
-    top: 21px;
+    top: 20px;
     font-family: 'FreightTextProMedium-Italic';
 
     @include respond-to(phone) {
@@ -142,7 +143,7 @@
   }
 
   &__section-question {
-    font-size: 12.5px;
+    font-size: 14px;
     padding: 20px 30px;
     color: #eed499;
     font-weight: 600;
