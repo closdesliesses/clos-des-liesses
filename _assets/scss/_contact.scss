@@ -113,12 +113,18 @@
 }
 
 .contact__tab__button,
-.contact-form__button {
+.contact-form__button,
+.contact__phone-button {
   @extend .button-bordered;
 
   @include respond-to(phone) {
     font-size: 12px;
   }
+}
+
+.contact__phone-button {
+  display: inline-block;
+  margin: 10px 0;
 }
 
 .contact__tab__description {
