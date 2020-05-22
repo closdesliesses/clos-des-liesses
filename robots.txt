@@ -1,2 +1,3 @@
 User-agent: *
-Disallow:
+Disallow: /merci-contact-evnmt-prive.html
+Disallow: /merci-contact-evnmt-pro.html

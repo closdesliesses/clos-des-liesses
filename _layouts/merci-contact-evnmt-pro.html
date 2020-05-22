@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include loader.html %}
+
+    {% include nav.html %}
+
+    <div id="merci-contact">
+      <div class="merci-contact__text-wrapper">
+        <h1 class="merci-contact__title">Merci,</h1>
+        <p class="merci-contact__subtitle">Nous vous contacterons bientôt.</p>
+      </div>
+      <a class="merci-contact__button" href="{{ site.baseurl }}/">Retour à l'accueil</a>
+    </div>
+
+    {% include footer.html %}
+
+    {% include script.html %}
+
+    <script src="{{ site.baseurl }}/assets/js/homepage.js?v=0.1"></script>
+
+  </body>
+
+</html>
