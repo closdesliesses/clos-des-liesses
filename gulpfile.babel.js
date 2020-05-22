@@ -1,6 +1,7 @@
 const gulp         = require('gulp');
 const sass         = require('gulp-sass');
 const postcss      = require('gulp-postcss');
+const cssnano      = require('cssnano');
 const cleancss     = require('gulp-clean-css');
 const concatcss    = require('gulp-concat-css');
 const autoprefixer = require('autoprefixer');
@@ -42,20 +43,6 @@ const paths = {
   svg: './assets/svg'
 }
 
-// Default
-gulp.task('default', ['js', 'sass', 'images', 'fonts', 'svg'], () => {
-  browserSync.init({
-    server: {
-      baseDir: './_site'
-    }
-  });
-  gulp.watch(globs.html, ['bs-reload']);
-  gulp.watch(globs.js, ['js']);
-  gulp.watch(globs.stylesheets, ['sass']);
-  gulp.watch(globs.images, ['images']);
-  gulp.watch(globs.fonts, ['fonts']);
-  gulp.watch(globs.svg, ['svg']);
-});
 
 // BrowserSync reload
 gulp.task('bs-reload', () => {
@@ -65,8 +52,8 @@ gulp.task('bs-reload', () => {
 // JavaScripts
 gulp.task('js', () => {
   return gulp.src(globs.js)
-    // .pipe(concat('application.js'))
-    // .pipe(rename('application.min.js'))
+    .pipe(concat('application.js'))
+    .pipe(rename('application.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js));
 });
@@ -79,7 +66,7 @@ gulp.task('sass', () => {
         includePaths: includePaths.stylesheets
       }
     ).on('error', sass.logError))
-    .pipe(postcss())
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(cleancss())
     .pipe(gulp.dest(paths.stylesheets));
 });
@@ -104,7 +91,40 @@ gulp.task('svg', () => {
     .pipe(gulp.dest(paths.svg))
 });
 
+gulp.task('prefix', () => {
+  return gulp.src(globs.stylesheets)
+    .pipe(autoprefixer({
+      browsers: ['last 99 versions'],
+      cascade: false
+  }))
+  .pipe(gulp.dest('style'))
+});
+
 // Clean
 gulp.task('clean', () => {
   return del([paths.build]);
 });
+
+gulp.task('browser-sync', () => {
+  browserSync.init({
+    server: {
+      baseDir: './_site'
+    }
+  });
+})
+
+gulp.task('build',  gulp.series(
+  'clean',
+  gulp.parallel('js', 'sass', 'images', 'fonts', 'svg'),
+));
+
+gulp.task('watch', () => {
+  gulp.watch(globs.html, gulp.series('bs-reload'));
+  gulp.watch(globs.js, gulp.series('js'));
+  gulp.watch(globs.stylesheets, gulp.series('sass'));
+  gulp.watch(globs.images, gulp.series('images'));
+  gulp.watch(globs.fonts, gulp.series('fonts'));
+  gulp.watch(globs.svg, gulp.series('svg'));
+});
+
+gulp.task('default', gulp.series('build', gulp.parallel('browser-sync', 'watch')))
