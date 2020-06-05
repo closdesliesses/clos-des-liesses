@@ -1,0 +1,52 @@
+#merci-contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 120px auto;
+  width: 80%;
+
+  @include respond-to(phone) {
+    margin: 76px auto;
+    width: 90%;
+  }
+}
+
+.merci-contact__text-wrapper {
+  padding: 55px 0;
+
+  @include respond-to(phone) {
+    padding: 40px 0;
+  }
+}
+
+.merci-contact__title {
+  color: #404040;
+  font-family: 'FreightTextProMedium-Italic';
+  font-weight: 200;
+  font-size: 45px;
+  text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 40px;
+  }
+}
+
+.merci-contact__subtitle {
+  color: #404040;
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 14px;
+  }
+}
+
+.merci-contact__button {
+  @extend .button-bordered;
+
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
+}
