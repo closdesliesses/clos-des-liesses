@@ -4,3 +4,4 @@
 
 - run `yarn`
 - run `yarn start`
+- if not working, run `bundle install`

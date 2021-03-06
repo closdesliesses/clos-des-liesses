@@ -1,4 +1,4 @@
-exclude: [Gemfile, Gemfile.lock, .babelrc, gulpfile.babel.js, package.json, package-lock.json, postcss.config.js, yarn.lock, node_modules]
+exclude: [Gemfile, Gemfile.lock, .babelrc, gulpfile.babel.js, package.json, package-lock.json, postcss.config.js, yarn.lock, node_modules, vendor, .bundle]
 
 # Dependencies
 markdown: kramdown
