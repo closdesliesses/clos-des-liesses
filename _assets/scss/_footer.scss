@@ -210,7 +210,28 @@ footer {
   }
 }
 
-.footer__legal-mentions,
+.footer__left-block {
+  align-items: center;
+  display: flex;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__logo-region {
+  height: auto;
+  margin-right: 30px;
+  width: 120px;
+
+  @include respond-to(phone) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.footer__left-block,
 .footer__address,
 .footer__social-icons {
   flex: 1 1 0;
